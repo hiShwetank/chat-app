@@ -3,147 +3,113 @@ namespace App\Controllers;
 
 use App\Models\UserModel;
 use App\Models\FriendModel;
-use App\Models\ChatModel;
+use App\Middleware\AuthMiddleware;
 
 class ChatController {
     private $userModel;
     private $friendModel;
-    private $chatModel;
+    private $authMiddleware;
 
-    public function __construct() {
-        $this->userModel = new UserModel();
-        $this->friendModel = new FriendModel();
-        $this->chatModel = new ChatModel();
+    public function __construct($dbPath) {
+        $this->userModel = new UserModel($dbPath);
+        $this->friendModel = new FriendModel($dbPath);
+        $this->authMiddleware = new AuthMiddleware();
     }
 
-    /**
-     * Render chat view
-     * @return void
-     */
-    public function index() {
-        // Get authenticated user from session
-        $user = $_SESSION['user'] ?? null;
+    public function loadChatPage() {
+        // Authenticate user
+        $user = $this->authMiddleware->authenticate();
 
-        if (!$user) {
-            http_response_code(401);
-            echo json_encode([
-                'success' => false,
-                'message' => 'Unauthorized'
-            ]);
-            exit;
-        }
+        // Get user details
+        $userDetails = $this->userModel->getUserById($user->user_id);
 
-        try {
-            // Fetch user details
-            $userDetails = $this->userModel->getUserById($user['id']);
-            
-            // Fetch friends
-            $friends = $this->friendModel->getUserFriends($user['id']);
-            
-            // Fetch recent chats
-            $recentChats = $this->chatModel->getRecentChats($user['id']);
+        // Get friend list
+        $friends = $this->friendModel->getFriendList($user->user_id);
 
-            // Render chat view or return JSON
-            header('Content-Type: text/html');
-            include dirname(__DIR__) . '/Views/chat.php';
+        // Get friend requests
+        $friendRequests = $this->friendModel->getFriendRequests($user->user_id);
 
-        } catch (\Exception $e) {
-            http_response_code(500);
-            echo json_encode([
-                'success' => false,
-                'message' => 'Error loading chat: ' . $e->getMessage()
-            ]);
-        }
+        // Render chat page with user and friends data
+        include '../app/Views/chat.php';
     }
 
-    /**
-     * Send a chat message
-     * @return void
-     */
     public function sendMessage() {
-        // Get authenticated user from session
-        $user = $_SESSION['user'] ?? null;
+        // Authenticate user
+        $user = $this->authMiddleware->authenticate();
 
-        if (!$user) {
-            http_response_code(401);
-            echo json_encode([
-                'success' => false,
-                'message' => 'Unauthorized'
-            ]);
-            exit;
+        // Get message details
+        $receiverId = $_POST['receiver_id'] ?? null;
+        $message = $_POST['message'] ?? null;
+
+        if (!$receiverId || !$message) {
+            http_response_code(400);
+            echo json_encode(['error' => 'Invalid message data']);
+            return;
         }
 
-        try {
-            // Get message data
-            $data = json_decode(file_get_contents('php://input'), true);
-            
-            // Validate message
-            if (!isset($data['recipient_id']) || !isset($data['message'])) {
-                http_response_code(400);
-                echo json_encode([
-                    'success' => false,
-                    'message' => 'Invalid message data'
-                ]);
-                exit;
-            }
+        // Save message to database (implement message model)
+        $result = $this->saveMessage($user->user_id, $receiverId, $message);
 
-            // Send message
-            $messageId = $this->chatModel->sendMessage(
-                $user['id'], 
-                $data['recipient_id'], 
-                $data['message']
-            );
-
-            echo json_encode([
-                'success' => true,
-                'message_id' => $messageId
-            ]);
-
-        } catch (\Exception $e) {
+        if ($result) {
+            http_response_code(200);
+            echo json_encode(['success' => true, 'message' => 'Message sent']);
+        } else {
             http_response_code(500);
-            echo json_encode([
-                'success' => false,
-                'message' => 'Error sending message: ' . $e->getMessage()
-            ]);
+            echo json_encode(['error' => 'Failed to send message']);
         }
     }
 
-    /**
-     * Get chat messages with a specific friend
-     * @param int $friendId
-     * @return void
-     */
-    public function getChatMessages($friendId) {
-        // Get authenticated user from session
-        $user = $_SESSION['user'] ?? null;
+    private function saveMessage($senderId, $receiverId, $message) {
+        // Implement message saving logic
+        // This would typically involve inserting into a messages table
+        $stmt = $this->userModel->getDatabase()->prepare('
+            INSERT INTO messages (sender_id, receiver_id, content, created_at) 
+            VALUES (:sender_id, :receiver_id, :content, CURRENT_TIMESTAMP)
+        ');
+        $stmt->bindValue(':sender_id', $senderId, SQLITE3_INTEGER);
+        $stmt->bindValue(':receiver_id', $receiverId, SQLITE3_INTEGER);
+        $stmt->bindValue(':content', $message, SQLITE3_TEXT);
 
-        if (!$user) {
-            http_response_code(401);
-            echo json_encode([
-                'success' => false,
-                'message' => 'Unauthorized'
-            ]);
-            exit;
+        return $stmt->execute();
+    }
+
+    public function getChatHistory() {
+        // Authenticate user
+        $user = $this->authMiddleware->authenticate();
+
+        // Get chat partner ID
+        $partnerId = $_GET['partner_id'] ?? null;
+
+        if (!$partnerId) {
+            http_response_code(400);
+            echo json_encode(['error' => 'Invalid partner ID']);
+            return;
         }
 
-        try {
-            // Fetch chat messages
-            $messages = $this->chatModel->getChatMessages(
-                $user['id'], 
-                $friendId
-            );
+        // Fetch chat history
+        $history = $this->fetchChatHistory($user->user_id, $partnerId);
 
-            echo json_encode([
-                'success' => true,
-                'messages' => $messages
-            ]);
+        echo json_encode($history);
+    }
 
-        } catch (\Exception $e) {
-            http_response_code(500);
-            echo json_encode([
-                'success' => false,
-                'message' => 'Error fetching messages: ' . $e->getMessage()
-            ]);
+    private function fetchChatHistory($userId, $partnerId) {
+        // Implement chat history retrieval
+        $stmt = $this->userModel->getDatabase()->prepare('
+            SELECT * FROM messages 
+            WHERE (sender_id = :user_id AND receiver_id = :partner_id) 
+               OR (sender_id = :partner_id AND receiver_id = :user_id)
+            ORDER BY created_at ASC
+        ');
+        $stmt->bindValue(':user_id', $userId, SQLITE3_INTEGER);
+        $stmt->bindValue(':partner_id', $partnerId, SQLITE3_INTEGER);
+
+        $result = $stmt->execute();
+        $messages = [];
+
+        while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+            $messages[] = $row;
         }
+
+        return $messages;
     }
 }

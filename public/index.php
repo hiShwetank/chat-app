@@ -49,9 +49,7 @@ try {
     $authenticatedUser = null;
     try {
         // Allow unauthorized routes for reset password, login, etc.
-        $authenticatedUser = $authMiddleware->handle(
-            $method, 
-            $request, 
+        $authenticatedUser = $authMiddleware->authenticate(
             // Allow unauthorized access for specific routes
             in_array($request, [
                 '/reset-password', 
@@ -172,13 +170,13 @@ try {
         case '/profile':
             if ($method === 'GET') {
                 // Authenticate user
-                $user = $authMiddleware->handle($method, $request);
+                $user = $authMiddleware->authenticate();
                 
                 // Include profile view
                 include '../app/Views/profile.php';
             } elseif ($method === 'POST') {
                 // Authenticate user
-                $user = $authMiddleware->handle($method, $request);
+                $user = $authMiddleware->authenticate();
 
                 // Handle profile update or picture upload
                 $data = $_POST;

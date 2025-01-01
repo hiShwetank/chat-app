@@ -1,123 +1,80 @@
-/* Mobile-specific Responsive Design */
+/* Mobile-First Responsive Design */
 @media (max-width: 768px) {
     .chat-app-container {
         flex-direction: column;
-        height: 100vh;
-        width: 100%;
     }
 
     .sidebar {
         width: 100%;
-        max-height: 40%;
-        border-right: none;
-        border-bottom: 1px solid #d1d7db;
+        max-height: 40vh;
+        order: 2;
     }
 
     .main-content {
         flex-grow: 1;
-        max-height: 60%;
+        order: 1;
     }
 
+    /* Compact User Profile */
     .user-profile {
-        padding: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: var(--space-sm);
     }
 
-    .user-profile-avatar {
-        width: 35px;
-        height: 35px;
-    }
-
-    .user-profile-name {
-        font-size: 14px;
-    }
-
-    .friends-list-item {
-        padding: 10px;
-    }
-
-    .friends-list-avatar {
+    .user-profile .avatar {
         width: 40px;
         height: 40px;
     }
 
-    .friends-list-name {
-        font-size: 14px;
+    .user-profile .user-info {
+        flex-grow: 1;
+        margin-left: var(--space-sm);
     }
 
-    .friends-list-last-message {
-        font-size: 12px;
+    .user-profile .user-actions {
+        display: flex;
+        gap: var(--space-xs);
     }
 
+    /* Friends List Mobile */
+    .friends-header {
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    .friend-item {
+        padding: var(--space-xs);
+    }
+
+    .friend-item .friend-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Chat Window Mobile */
     .chat-header {
-        padding: 8px 12px;
+        padding: var(--space-xs) var(--space-sm);
     }
 
-    .chat-header-avatar {
-        width: 35px;
-        height: 35px;
-    }
-
-    .chat-header-name {
-        font-size: 14px;
-    }
-
-    .chat-messages {
-        padding: 10px;
-    }
-
-    .message {
-        max-width: 80%;
-        padding: 6px 10px;
-        font-size: 14px;
-    }
-
-    .chat-input {
-        padding: 8px;
-    }
-
-    .chat-input-field {
-        padding: 8px;
-        font-size: 14px;
-    }
-
-    .chat-input-send {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-}
-
-/* Very Small Screens */
-@media (max-width: 375px) {
-    .user-profile-avatar,
-    .friends-list-avatar,
-    .chat-header-avatar {
+    .chat-partner-info img {
         width: 30px;
         height: 30px;
     }
 
-    .user-profile-name,
-    .friends-list-name,
-    .chat-header-name {
-        font-size: 12px;
+    .message-input-container {
+        flex-direction: column;
+        gap: var(--space-xs);
     }
 
-    .friends-list-last-message {
-        font-size: 10px;
+    #message-input {
+        width: 100%;
+        margin: 0;
     }
 
-    .message {
-        max-width: 90%;
-        padding: 4px 8px;
-        font-size: 12px;
-    }
-
-    .chat-input-field {
-        font-size: 12px;
-    }
-
-    .chat-input-send {
-        padding: 6px 12px;
-        font-size: 12px;
+    .input-actions {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
 }
 
