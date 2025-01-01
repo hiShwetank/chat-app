@@ -218,3 +218,1473 @@ Stack trace:
 #1 E:\ai\chat\chat-app\public\index.php(168): include('E:\\ai\\chat\\chat...')
 #2 {main}
   thrown in E:\ai\chat\chat-app\app\Views\Components\FriendRequests.php on line 8
+[02-Jan-2025 00:23:03 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:23:03 Europe/Berlin] Current Route: /login
+[02-Jan-2025 00:23:03 Europe/Berlin] Allow Unauthorized: Yes
+[02-Jan-2025 00:23:03 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:23:03 Europe/Berlin] Route is unprotected or explicitly allowed
+[02-Jan-2025 00:23:13 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:23:13 Europe/Berlin] Current Route: /login
+[02-Jan-2025 00:23:13 Europe/Berlin] Allow Unauthorized: Yes
+[02-Jan-2025 00:23:13 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:23:13 Europe/Berlin] Route is unprotected or explicitly allowed
+[02-Jan-2025 00:23:13 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:23:13 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:23:13 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:23:13 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:23:13 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:23:13 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:23:13 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzEyNzYsImV4cCI6MTczNTc3NDg3NiwidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.B-rNq5RPitEDIVpuMGB9EbHVcG98Tlc6oSbzGCMpeAg
+)
+
+[02-Jan-2025 00:23:13 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:23:13 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:23:13 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:23:13 Europe/Berlin] PHP Deprecated:  Optional parameter $requests declared before required parameter $currentUserId is implicitly treated as a required parameter in E:\ai\chat\chat-app\app\Views\Components\FriendRequests.php on line 8
+[02-Jan-2025 00:23:13 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Views\Components\FriendRequests::__construct(), 1 passed in E:\ai\chat\chat-app\app\Views\chat.php on line 40 and exactly 2 expected in E:\ai\chat\chat-app\app\Views\Components\FriendRequests.php:8
+Stack trace:
+#0 E:\ai\chat\chat-app\app\Views\chat.php(40): App\Views\Components\FriendRequests->__construct(Array)
+#1 E:\ai\chat\chat-app\public\index.php(168): include('E:\\ai\\chat\\chat...')
+#2 {main}
+  thrown in E:\ai\chat\chat-app\app\Views\Components\FriendRequests.php on line 8
+[02-Jan-2025 00:25:55 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:25:55 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:25:55 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:25:55 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:25:55 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:25:55 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:25:55 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:25:55 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:25:55 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:25:55 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:25:57 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:25:57 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:25:57 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:25:57 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:25:57 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:25:57 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:25:57 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:25:57 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:25:57 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:25:57 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:25:58 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:25:58 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:25:58 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:25:58 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:25:58 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:25:58 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:25:58 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:25:58 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:25:58 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:25:58 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:25:59 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:25:59 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:25:59 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:25:59 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:25:59 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:25:59 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:25:59 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:25:59 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:25:59 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:25:59 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:25:59 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:25:59 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:25:59 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:25:59 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:25:59 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:25:59 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:25:59 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:25:59 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:25:59 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:25:59 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:25:59 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:25:59 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:25:59 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:25:59 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:25:59 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:25:59 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:25:59 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:25:59 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:25:59 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:25:59 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:26:00 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:26:00 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:26:00 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:26:00 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:26:00 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:26:00 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:00 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:00 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:26:00 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:26:00 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:26:00 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:26:00 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:26:00 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:26:00 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:26:00 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:26:00 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:00 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:00 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:26:00 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:26:00 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:26:01 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:26:01 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:26:01 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:26:01 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:26:01 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:26:01 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:01 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:01 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:26:01 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:26:01 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:26:02 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:26:02 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:26:02 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:26:02 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:26:02 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:26:02 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:02 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:02 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:26:02 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:26:02 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:26:02 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:26:02 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:26:02 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:26:02 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:26:02 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:26:02 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:02 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:02 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:26:02 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:26:02 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:26:02 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:26:02 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:26:02 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:26:02 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:26:02 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:26:02 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:02 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:02 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:26:02 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:26:02 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:26:03 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:26:03 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:26:03 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:26:03 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:26:03 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:26:03 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:03 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:03 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:26:03 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:26:03 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:26:03 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:26:03 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:26:03 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:26:03 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:26:03 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:26:03 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:03 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:03 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:26:03 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:26:03 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:26:04 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:26:04 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:26:04 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:26:04 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:26:04 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:26:04 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:04 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:04 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:26:04 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:26:04 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:26:05 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:26:05 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:26:05 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:26:05 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:26:05 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:26:05 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:05 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:05 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:26:05 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:26:05 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:26:05 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:26:05 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:26:05 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:26:05 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:26:05 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:26:05 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:05 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:05 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:26:05 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:26:05 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:26:35 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:26:35 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:26:35 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:26:35 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:26:35 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:26:35 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:35 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:35 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:26:35 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:26:35 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:26:36 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:26:36 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:26:36 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:26:36 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:26:36 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:26:36 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:36 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:36 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:26:36 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:26:36 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:26:36 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:26:36 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:26:36 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:26:36 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:26:36 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:26:36 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:36 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:36 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:26:36 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:26:36 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:26:36 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:26:36 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:26:36 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:26:36 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:26:36 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:26:36 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:36 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:26:36 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:26:36 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:26:36 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:28:13 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:28:13 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:28:13 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:28:13 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:28:13 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:28:13 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:28:13 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:28:13 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:28:13 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:28:13 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:28:14 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:28:14 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:28:14 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:28:14 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:28:14 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:28:14 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:28:14 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:28:14 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:28:14 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:28:14 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:28:15 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:28:15 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:28:15 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:28:15 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:28:15 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:28:15 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:28:15 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:28:15 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:28:15 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:28:15 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:28:16 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:28:16 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:28:16 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:28:16 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:28:16 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:28:16 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:28:16 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:28:16 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:28:16 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:28:16 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:28:17 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:28:17 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:28:17 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:28:17 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:28:17 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:28:17 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:28:17 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:28:17 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:28:17 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:28:17 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:28:29 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:28:29 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:28:29 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:28:29 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:28:29 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:28:29 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:28:29 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:28:29 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:28:29 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:28:29 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:28:31 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:28:31 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:28:31 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:28:31 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:28:31 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:28:31 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:28:31 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:28:31 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:28:31 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:28:31 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:28:32 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:28:32 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:28:32 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:28:32 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:28:32 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:28:32 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:28:32 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:28:32 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:28:32 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:28:32 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:29:58 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:29:58 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:29:58 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:29:58 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:29:58 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:29:58 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:29:58 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:29:58 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:29:58 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:29:58 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:00 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:00 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:00 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:00 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:00 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:00 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:00 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:00 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:00 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:00 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:01 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:01 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:01 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:01 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:01 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:01 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:01 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:01 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:01 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:01 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:01 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:01 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:01 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:01 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:01 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:01 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:01 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:01 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:01 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:01 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:07 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:07 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:07 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:07 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:07 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:07 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:07 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:07 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:07 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:07 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:08 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:08 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:08 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:08 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:08 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:08 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:08 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:08 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:08 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:08 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:10 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:10 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:10 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:10 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:10 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:10 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:10 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:10 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:10 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:10 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:10 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:10 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:10 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:10 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:10 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:10 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:10 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:10 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:10 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:10 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:11 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:11 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:11 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:11 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:11 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:11 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:11 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:11 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:11 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:11 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:12 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:12 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:12 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:12 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:12 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:12 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:12 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:12 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:12 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:12 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:12 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:12 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:12 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:12 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:12 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:12 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:12 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:12 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:12 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:12 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:12 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:12 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:12 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:12 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:12 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:12 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:12 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:12 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:12 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:12 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:13 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:13 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:13 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:13 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:13 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:13 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:13 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:13 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:13 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:13 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:13 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:13 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:13 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:13 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:13 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:13 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:13 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:13 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:13 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:13 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:13 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:13 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:13 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:13 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:13 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:13 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:13 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:13 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:13 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:13 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:13 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:13 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:13 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:13 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:13 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:13 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:13 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:13 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:13 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:13 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:14 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:14 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:14 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:14 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:14 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:14 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:14 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:14 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:14 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:14 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:14 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:14 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:14 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:14 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:14 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:14 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:14 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:14 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:14 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:14 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:14 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:14 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:14 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:14 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:14 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:14 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:14 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:14 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:14 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:14 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:30:15 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:30:15 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:30:15 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:30:15 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:30:15 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:30:15 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:15 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:30:15 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:30:15 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:30:15 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:31:09 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:31:09 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:31:09 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:31:09 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:31:09 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:31:09 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:31:09 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:31:09 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:31:09 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:31:09 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:31:10 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:31:10 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:31:10 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:31:10 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:31:10 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:31:10 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:31:10 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:31:10 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:31:10 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:31:10 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:31:11 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:31:11 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:31:11 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:31:11 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:31:11 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:31:11 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:31:11 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:31:11 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:31:11 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:31:11 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:31:13 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:31:13 Europe/Berlin] Current Route: /invite/generate-link
+[02-Jan-2025 00:31:13 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:31:13 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:31:13 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:31:13 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:31:13 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:31:13 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:31:13 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:31:13 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:34:34 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:34:34 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:34:34 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:34:34 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:34:34 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:34:34 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:34:34 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:34:34 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:34:34 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:34:34 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:34:38 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:34:38 Europe/Berlin] Current Route: /invite/generate-link
+[02-Jan-2025 00:34:38 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:34:38 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:34:38 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:34:38 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:34:38 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:34:38 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:34:38 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:34:39 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:35:04 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:35:04 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:35:04 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:35:04 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:35:04 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:35:04 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:35:04 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:35:04 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:35:04 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:35:04 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:35:06 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:35:06 Europe/Berlin] Current Route: /invite/generate-link
+[02-Jan-2025 00:35:06 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:35:06 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:35:06 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:35:06 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:35:06 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:35:06 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:35:06 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:35:06 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:35:16 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:35:16 Europe/Berlin] Current Route: /invite/generate-link
+[02-Jan-2025 00:35:16 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:35:16 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:35:16 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:35:16 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:35:16 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:35:16 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:35:16 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:35:16 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:35:24 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:35:24 Europe/Berlin] Current Route: /invite/generate-link
+[02-Jan-2025 00:35:24 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:35:24 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:35:24 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:35:24 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:35:24 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:35:24 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:35:24 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:35:24 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:37:23 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:37:23 Europe/Berlin] Current Route: /chat
+[02-Jan-2025 00:37:23 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:37:23 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:37:23 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:37:23 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:37:23 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:37:23 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:37:23 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:37:23 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:37:24 Europe/Berlin] Authentication Request Debug:
+[02-Jan-2025 00:37:24 Europe/Berlin] Current Route: /invite/generate-link
+[02-Jan-2025 00:37:24 Europe/Berlin] Allow Unauthorized: No
+[02-Jan-2025 00:37:24 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[02-Jan-2025 00:37:24 Europe/Berlin] Token Sources Debug:
+[02-Jan-2025 00:37:24 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:37:24 Europe/Berlin] Session: Array
+(
+    [user_id] => 1
+    [username] => shwetank
+    [email] => admin@mics.asia
+    [status] => online
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+)
+
+[02-Jan-2025 00:37:24 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzM3OTMsImV4cCI6MTczNTc3NzM5MywidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.bINZ_-zH0w5pmwP6TEYDJzSLsCSgbKNYU6gv0qRA6nQ
+[02-Jan-2025 00:37:24 Europe/Berlin] Final Token: Found
+[02-Jan-2025 00:37:24 Europe/Berlin] Authentication successful for user: shwetank
+[02-Jan-2025 00:38:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Middleware\AuthMiddleware::authenticate() in E:\ai\chat\chat-app\public\index.php:52
+Stack trace:
+#0 {main}
+  thrown in E:\ai\chat\chat-app\public\index.php on line 52
+[02-Jan-2025 00:38:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Middleware\AuthMiddleware::authenticate() in E:\ai\chat\chat-app\public\index.php:52
+Stack trace:
+#0 {main}
+  thrown in E:\ai\chat\chat-app\public\index.php on line 52
+[02-Jan-2025 00:38:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Middleware\AuthMiddleware::authenticate() in E:\ai\chat\chat-app\public\index.php:52
+Stack trace:
+#0 {main}
+  thrown in E:\ai\chat\chat-app\public\index.php on line 52
+[02-Jan-2025 00:39:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference in E:\ai\chat\chat-app\app\Middleware\AuthMiddleware.php:46
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(52): App\Middleware\AuthMiddleware->handle('GET', '/chat', false)
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Middleware\AuthMiddleware.php on line 46
+[02-Jan-2025 00:39:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference in E:\ai\chat\chat-app\app\Middleware\AuthMiddleware.php:46
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(52): App\Middleware\AuthMiddleware->handle('GET', '/chat', false)
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Middleware\AuthMiddleware.php on line 46
+[02-Jan-2025 00:39:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference in E:\ai\chat\chat-app\app\Middleware\AuthMiddleware.php:46
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(52): App\Middleware\AuthMiddleware->handle('GET', '/chat', false)
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Middleware\AuthMiddleware.php on line 46
