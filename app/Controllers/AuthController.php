@@ -19,7 +19,7 @@ class AuthController {
     // User Registration
     public function register($data) {
         try {
-            // Validate registration data
+            // Validate input
             $this->validateRegistrationData($data);
 
             // Attempt registration
@@ -48,7 +48,7 @@ class AuthController {
     // User Login
     public function login($data) {
         try {
-            // Validate login data
+            // Validate input
             $this->validateLoginData($data);
 
             // Attempt login

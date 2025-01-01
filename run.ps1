@@ -1,162 +1,181 @@
-# Comprehensive Diagnostic and Troubleshooting Script
+# Comprehensive Error Handling and Logging
+$ErrorActionPreference = 'Stop'
+$LogFile = "e:/ai/chat/chat-app/deployment_log.txt"
 
-# Ensure detailed error reporting
-$ErrorActionPreference = 'Continue'
-
-# Color coding function
-function Write-ColorOutput {
+# Logging Function
+function Write-Log {
     param(
-        [string]$Message, 
-        [string]$Color = 'Green'
+        [string]$Message,
+        [string]$Level = "INFO"
     )
-    Write-Host $Message -ForegroundColor $Color
+    $Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $LogMessage = "[$Timestamp] [$Level] $Message"
+    Add-Content -Path $LogFile -Value $LogMessage
+    
+    # Console Output
+    switch ($Level) {
+        "ERROR" { Write-Host $LogMessage -ForegroundColor Red }
+        "WARNING" { Write-Host $LogMessage -ForegroundColor Yellow }
+        "SUCCESS" { Write-Host $LogMessage -ForegroundColor Green }
+        default { Write-Host $LogMessage }
+    }
 }
 
-# Detailed System Diagnostic
-function Invoke-SystemDiagnostic {
-    Write-ColorOutput "=== System Diagnostic ===" 'Cyan'
-    
+# Comprehensive Dependency Check
+function Verify-Dependencies {
     # PHP Check
     try {
-        $phpPath = (Get-Command php -ErrorAction Stop).Source
         $phpVersion = php -v
-        Write-ColorOutput "PHP Path: $phpPath" 'Green'
-        Write-ColorOutput "PHP Version: $phpVersion" 'Green'
+        if ($phpVersion -match 'PHP (\d+\.\d+)') {
+            $version = $Matches[1]
+            if ([double]$version -lt 8.0) {
+                throw "PHP version too low. Required 8.0+"
+            }
+            Write-Log "PHP Version $version detected" "SUCCESS"
+        }
     }
     catch {
-        Write-ColorOutput "ERROR: PHP not found!" 'Red'
-        Write-Host "Possible PHP locations to check:"
-        @(
-            "C:\xampp\php\php.exe",
-            "C:\wamp\bin\php\php.exe",
-            "C:\Program Files\PHP\php.exe"
-        ) | ForEach-Object { Write-Host "- $_" }
-        return $false
+        Write-Log "PHP not found or incompatible: $_" "ERROR"
+        
+        # Attempt to install PHP
+        try {
+            Write-Log "Attempting to install PHP via Chocolatey" "WARNING"
+            choco install php -y
+            refreshenv
+        }
+        catch {
+            Write-Log "Failed to install PHP: $_" "ERROR"
+            throw "PHP installation failed"
+        }
     }
 
     # Composer Check
     try {
-        $composerPath = (Get-Command composer -ErrorAction Stop).Source
         $composerVersion = composer --version
-        Write-ColorOutput "Composer Path: $composerPath" 'Green'
-        Write-ColorOutput "Composer Version: $composerVersion" 'Green'
+        Write-Log "Composer detected" "SUCCESS"
     }
     catch {
-        Write-ColorOutput "WARNING: Composer not found" 'Yellow'
+        Write-Log "Composer not found" "WARNING"
+        try {
+            Write-Log "Attempting to install Composer" "WARNING"
+            php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+            php composer-setup.php
+            php -r "unlink('composer-setup.php');"
+            refreshenv
+        }
+        catch {
+            Write-Log "Composer installation failed: $_" "ERROR"
+            throw "Composer installation failed"
+        }
     }
 
-    # Project Structure Check
-    Write-ColorOutput "`n=== Project Structure ===" 'Cyan'
-    $requiredFiles = @(
-        "run.php",
-        "public\index.php",
-        "config\database.php",
-        "bin\group_manager.php"
-    )
-
-    $missingFiles = $requiredFiles | Where-Object { -not (Test-Path $_) }
-    
-    if ($missingFiles) {
-        Write-ColorOutput "Missing Critical Files:" 'Red'
-        $missingFiles | ForEach-Object { Write-Host "- $_" }
-        return $false
-    }
-    else {
-        Write-ColorOutput "All critical files present" 'Green'
-    }
-
-    # Dependency Check
-    Write-ColorOutput "`n=== Dependency Check ===" 'Cyan'
+    # Install Dependencies
     try {
-        $composerDeps = composer show
-        Write-ColorOutput "Composer Dependencies Installed" 'Green'
+        Write-Log "Installing project dependencies" "INFO"
+        composer install --no-interaction
+        Write-Log "Dependencies installed successfully" "SUCCESS"
     }
     catch {
-        Write-ColorOutput "ERROR: Dependencies not installed" 'Red'
-        Write-Host "Run 'composer install' to resolve"
-        return $false
+        Write-Log "Dependency installation failed: $_" "ERROR"
+        throw "Dependency installation error"
     }
-
-    return $true
 }
 
-# Service Startup Function
-function Start-ChatServices {
-    Write-ColorOutput "=== Starting Services ===" 'Cyan'
-    
-    # Web Server
-    $webProcess = Start-Process php -ArgumentList "run.php serve" -PassThru -NoNewWindow
-    Start-Sleep -Seconds 2
-    
-    # WebSocket Server
-    $wsProcess = Start-Process php -ArgumentList "run.php websocket" -PassThru -NoNewWindow
-    Start-Sleep -Seconds 2
-    
-    # Mail Server
-    $mailProcess = Start-Process php -ArgumentList "run.php mail" -PassThru -NoNewWindow
-    Start-Sleep -Seconds 2
+# Database Initialization
+function Initialize-Database {
+    try {
+        Write-Log "Initializing database" "INFO"
+        
+        # Ensure database directory exists
+        $dbDir = "e:/ai/chat/chat-app/database"
+        if (!(Test-Path $dbDir)) {
+            New-Item -ItemType Directory -Path $dbDir
+        }
 
-    # Check Port Availability
-    $ports = @(
-        @{Port=8000; Name="Web Server"},
-        @{Port=8080; Name="WebSocket Server"},
-        @{Port=1025; Name="Mail Server"}
-    )
+        # Run database initialization script
+        php "e:/ai/chat/chat-app/database/init_db.php"
+        Write-Log "Database initialized successfully" "SUCCESS"
+    }
+    catch {
+        Write-Log "Database initialization failed: $_" "ERROR"
+        throw "Database initialization error"
+    }
+}
 
-    foreach ($portInfo in $ports) {
-        $testResult = Test-NetConnection localhost -Port $portInfo.Port
-        if ($testResult.TcpTestSucceeded) {
-            Write-ColorOutput "$($portInfo.Name) running on port $($portInfo.Port)" 'Green'
+# Start WebSocket Server
+function Start-WebSocket-Server {
+    try {
+        Write-Log "Starting WebSocket server" "INFO"
+        $websocketProcess = Start-Process php -ArgumentList "e:/ai/chat/chat-app/src/WebSocket/server.php" -PassThru -NoNewWindow -RedirectStandardOutput "websocket.log" -RedirectStandardError "websocket_error.log"
+        
+        # Wait and verify server start
+        Start-Sleep -Seconds 3
+        $port = 8080
+        $process = Get-NetTCPConnection -LocalPort $port -ErrorAction SilentlyContinue
+        
+        if ($process) {
+            Write-Log "WebSocket server running on port $port" "SUCCESS"
+            $websocketProcess.Id | Out-File -FilePath "websocket.pid"
         }
         else {
-            Write-ColorOutput "FAILED: $($portInfo.Name) on port $($portInfo.Port)" 'Red'
+            throw "WebSocket server failed to start"
         }
     }
-
-    # Open Web Browser
-    Start-Process "http://localhost:8000/debug.php"
-}
-
-# Error Logging Function
-function Get-RecentErrorLogs {
-    Write-ColorOutput "`n=== Recent Error Logs ===" 'Cyan'
-    $logFiles = @(
-        "error.log",
-        "websocket.log",
-        "php_error.log",
-        "debug_log.txt"
-    )
-
-    foreach ($logFile in $logFiles) {
-        if (Test-Path $logFile) {
-            Write-ColorOutput "Errors in $logFile:" 'Yellow'
-            Get-Content $logFile | Select-String -Pattern "Error|Exception" | Select-Object -Last 10
-        }
+    catch {
+        Write-Log "WebSocket server startup failed: $_" "ERROR"
+        throw "WebSocket server startup error"
     }
 }
 
-# Main Execution
-function Invoke-ChatAppDiagnostic {
-    # Change to script directory
-    Set-Location $PSScriptRoot
-
-    # System Check
-    $systemCheckPassed = Invoke-SystemDiagnostic
-
-    # Show Recent Logs
-    Get-RecentErrorLogs
-    
-    # Prompt for Service Start
-    if ($systemCheckPassed) {
-        $choice = Read-Host "`nDo you want to start services? (Y/N)"
-        if ($choice -eq 'Y') {
-            Start-ChatServices
+# Start PHP Built-in Server
+function Start-PHP-Server {
+    try {
+        Write-Log "Starting PHP built-in server" "INFO"
+        $phpServerProcess = Start-Process php -ArgumentList "-S", "localhost:8000", "-t", "e:/ai/chat/chat-app/public" -PassThru -NoNewWindow -RedirectStandardOutput "php_server.log" -RedirectStandardError "php_server_error.log"
+        
+        # Wait and verify server start
+        Start-Sleep -Seconds 3
+        $port = 8000
+        $process = Get-NetTCPConnection -LocalPort $port -ErrorAction SilentlyContinue
+        
+        if ($process) {
+            Write-Log "PHP server running on port $port" "SUCCESS"
+            $phpServerProcess.Id | Out-File -FilePath "php_server.pid"
+            
+            # Open browser
+            Start-Process "http://localhost:8000"
+        }
+        else {
+            throw "PHP server failed to start"
         }
     }
-    else {
-        Write-ColorOutput "System check failed. Please resolve issues before starting services." 'Red'
+    catch {
+        Write-Log "PHP server startup failed: $_" "ERROR"
+        throw "PHP server startup error"
     }
 }
 
-# Run Diagnostic
-Invoke-ChatAppDiagnostic
+# Main Execution Function
+function Start-Application {
+    try {
+        # Clear previous logs
+        if (Test-Path $LogFile) { Clear-Content $LogFile }
+        
+        Write-Log "Starting Chat Application Deployment" "INFO"
+        
+        # Comprehensive Setup
+        Verify-Dependencies
+        Initialize-Database
+        Start-WebSocket-Server
+        Start-PHP-Server
+        
+        Write-Log "Chat Application Deployment Completed Successfully" "SUCCESS"
+    }
+    catch {
+        Write-Log "Deployment Failed: $_" "ERROR"
+        throw "Application deployment error"
+    }
+}
+
+# Execute
+Start-Application

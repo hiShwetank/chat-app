@@ -1,68 +1,59 @@
-# Chat Application
+# Chat Application Deployment Guide
 
 ## Prerequisites
-- PHP 8.1+
+- Windows 10/11
+- PowerShell 5.1+
+- PHP 8.0+
 - Composer
-- Git
+- Chocolatey (recommended for easy dependency management)
 
-## Installation
+## Quick Start
 
-### Windows
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/chat-app.git
-cd chat-app
+### 1. First-Time Setup
+1. Open PowerShell as Administrator
+2. Install Chocolatey (if not installed):
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
+iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-2. Install Dependencies
-```bash
-composer install
+3. Install Dependencies:
+```powershell
+choco install php composer -y
+refreshenv
 ```
 
-3. Running the Application
-- Use `run.bat` to manage services
+### 2. Application Startup
 - Double-click `run.bat`
-- Choose from menu options
-
-### Unix-like Systems (Linux/macOS)
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/chat-app.git
-cd chat-app
-chmod +x run.sh
+- OR run in PowerShell:
+```powershell
+.\run.ps1 start
 ```
 
-2. Install Dependencies
-```bash
-composer install
-```
-
-3. Running the Application
-```bash
-# Start all services
-./run.sh
-
-# Alternative: Use PHP directly
-php run.php serve      # Start web server
-php run.php websocket  # Start WebSocket server
-php run.php mail       # Start SMTP debug server
-```
-
-## Service URLs
-- Web Application: `http://localhost:8000`
-- WebSocket Server: `ws://localhost:8080`
-- SMTP Debug Server: `localhost:1025`
+### Supported Commands
+- `start`: Launch application
+- `stop`: Stop all servers
+- `restart`: Restart application
 
 ## Troubleshooting
-- Ensure PHP is in system PATH
-- Check `logs/` directory for error logs
-- Verify all dependencies are installed
+- Ensure PHP and Composer are in system PATH
+- Check `websocket.log` and `php_server.log` for errors
+- Verify port 8000 and 8080 are available
 
-## Development
-- Use `php run.php migrate` to run database migrations
-- Use group management tools in `bin/group_manager.php`
+## Development Notes
+- WebSocket Server: `localhost:8080`
+- Web Application: `localhost:8000`
+- Default Database: SQLite in `database/chat.sqlite`
 
 ## Security
-- Never run scripts as root/administrator unless necessary
-- Keep sensitive files (like `.env`) secure
+- Keep `.env` file secure
+- Use strong, unique passwords
 - Regularly update dependencies
+
+## Contributing
+1. Fork Repository
+2. Create Feature Branch
+3. Commit Changes
+4. Push to Branch
+5. Create Pull Request

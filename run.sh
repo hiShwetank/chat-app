@@ -1,96 +1,88 @@
 #!/bin/bash
 
-# Chat Application Management Script
+# Chat Application Runner for Unix-like Systems
 
-# Color codes
+# Color Codes
 GREEN='\033[0;32m'
 RED='\033[0;31m'
-YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
-# Logging function
-log() {
-    echo -e "[$(date '+%Y-%m-%d %H:%M:%S')] ${1}"
-}
-
-# Check PHP installation
-check_php() {
+# Dependency Checks
+check_dependencies() {
+    # Check PHP
     if ! command -v php &> /dev/null; then
-        log "${RED}ERROR: PHP is not installed or not in PATH${NC}"
-        echo "Please install PHP:"
-        echo "- For Ubuntu/Debian: sudo apt-get install php"
-        echo "- For macOS with Homebrew: brew install php"
-        echo "- For CentOS/RHEL: sudo yum install php"
+        echo -e "${RED}PHP is not installed!${NC}"
         exit 1
     fi
-    php_version=$(php -v | head -n 1)
-    log "${GREEN}PHP detected: $php_version${NC}"
+
+    # Check Composer
+    if ! command -v composer &> /dev/null; then
+        echo -e "${RED}Composer is not installed!${NC}"
+        exit 1
+    fi
 }
 
-# Check project structure
-check_project_structure() {
-    local required_files=(
-        "run.php"
-        "public/index.php"
-        "bin/group_manager.php"
-    )
-
-    for file in "${required_files[@]}"; do
-        if [ ! -f "$file" ]; then
-            log "${RED}Missing required file: $file${NC}"
-            exit 1
-        fi
-    done
-}
-
-# Start services
-start_services() {
-    log "${GREEN}Starting Services:${NC}"
+# Start Servers
+start_servers() {
+    echo -e "${GREEN}Starting Chat Application...${NC}"
     
-    # Web Server
-    php run.php serve &
-    web_pid=$!
-    
-    # WebSocket Server
-    php run.php websocket &
-    websocket_pid=$!
-    
-    # SMTP Debug Server
-    php run.php mail &
-    mail_pid=$!
+    # Install Dependencies
+    composer install
 
-    echo "Services started:"
-    echo "- Web Server: http://localhost:8000"
-    echo "- WebSocket: ws://localhost:8080"
-    echo "- SMTP Debug: localhost:1025"
+    # Start WebSocket Server
+    php src/WebSocket/server.php > websocket.log 2>&1 &
+    WEBSOCKET_PID=$!
+    echo $WEBSOCKET_PID > websocket.pid
 
-    # Trap to ensure clean shutdown
-    trap "kill $web_pid $websocket_pid $mail_pid" SIGINT SIGTERM EXIT
+    # Start PHP Built-in Server
+    php -S localhost:8000 -t public > php_server.log 2>&1 &
+    PHP_SERVER_PID=$!
+    echo $PHP_SERVER_PID > php_server.pid
 
-    # Wait for services
-    wait
+    echo -e "${GREEN}Application started!${NC}"
+    echo "WebSocket Server: http://localhost:8080"
+    echo "Web Application: http://localhost:8000"
 }
 
-# Stop services
-stop_services() {
-    log "${YELLOW}Stopping all PHP services${NC}"
-    pkill -f "php run.php"
-}
-
-# Main script
-main() {
-    # Check for root/sudo
-    if [[ $EUID -eq 0 ]]; then
-        log "${YELLOW}Warning: Running as root is not recommended${NC}"
+# Stop Servers
+stop_servers() {
+    echo -e "${RED}Stopping Chat Application...${NC}"
+    
+    # Stop WebSocket Server
+    if [ -f websocket.pid ]; then
+        kill -9 $(cat websocket.pid)
+        rm websocket.pid
     fi
 
-    # Perform checks
-    check_php
-    check_project_structure
+    # Stop PHP Server
+    if [ -f php_server.pid ]; then
+        kill -9 $(cat php_server.pid)
+        rm php_server.pid
+    fi
 
-    # Start services
-    start_services
+    echo -e "${GREEN}Servers stopped.${NC}"
 }
 
-# Execute main function
-main
+# Main Execution
+main() {
+    check_dependencies
+
+    case "$1" in
+        start)
+            start_servers
+            ;;
+        stop)
+            stop_servers
+            ;;
+        restart)
+            stop_servers
+            start_servers
+            ;;
+        *)
+            echo "Usage: $0 {start|stop|restart}"
+            exit 1
+    esac
+}
+
+# Execute Main Function
+main "${1:-start}"

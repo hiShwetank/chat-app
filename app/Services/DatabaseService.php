@@ -38,61 +38,55 @@ class DatabaseService {
     }
 
     // Run all migrations
-    public static function runMigrations() {
-        try {
-            $db = self::getConnection();
+    public static function runMigrations($migrationsPath = null) {
+        if ($migrationsPath === null) {
+            $migrationsPath = dirname(__DIR__, 2) . '/database/migrations';
+        }
 
-            // List of migration classes
-            $migrations = [
-                '\Database\Migrations\CreateUsersTable',
-                '\Database\Migrations\CreateFriendshipTables',
-                '\Database\Migrations\CreateGroupsTables'
-            ];
+        $db = self::getConnection();
 
-            foreach ($migrations as $migrationClass) {
-                // Dynamically instantiate and run migration
-                $migration = new $migrationClass($db);
-                
-                // Check if migration table exists
-                $tableName = strtolower(substr(strrchr($migrationClass, '\\'), 1));
-                $checkTableQuery = "SELECT name FROM sqlite_master WHERE type='table' AND name='migrations'";
-                $checkStmt = $db->query($checkTableQuery);
-                $tableExists = $checkStmt->fetch();
+        // Ensure migrations table exists
+        $db->exec("
+            CREATE TABLE IF NOT EXISTS migrations (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                migration TEXT UNIQUE NOT NULL,
+                ran_at DATETIME DEFAULT CURRENT_TIMESTAMP
+            )
+        ");
 
-                if (!$tableExists) {
-                    // Create migrations table if not exists
-                    $db->exec("
-                        CREATE TABLE IF NOT EXISTS migrations (
-                            id INTEGER PRIMARY KEY AUTOINCREMENT,
-                            migration TEXT NOT NULL,
-                            applied_at DATETIME DEFAULT CURRENT_TIMESTAMP
-                        )
-                    ");
-                }
+        // Get all migration files
+        $migrationFiles = glob($migrationsPath . '/*.php');
 
-                // Check if migration has been applied
-                $checkMigrationQuery = "SELECT * FROM migrations WHERE migration = :migration";
-                $checkMigrationStmt = $db->prepare($checkMigrationQuery);
-                $checkMigrationStmt->execute([':migration' => $migrationClass]);
-                
-                if (!$checkMigrationStmt->fetch()) {
-                    // Run migration
-                    $migration->up();
+        foreach ($migrationFiles as $migrationFile) {
+            $migrationFileName = basename($migrationFile, '.php');
+            $fullClassName = "Database\\Migrations\\" . $migrationFileName;
 
-                    // Record migration
-                    $insertMigrationQuery = "
-                        INSERT INTO migrations (migration) 
-                        VALUES (:migration)
-                    ";
-                    $insertStmt = $db->prepare($insertMigrationQuery);
-                    $insertStmt->execute([':migration' => $migrationClass]);
-                }
+            // Skip if migration already ran
+            $stmt = $db->prepare("SELECT * FROM migrations WHERE migration = :migration");
+            $stmt->execute(['migration' => $migrationFileName]);
+            if ($stmt->fetch()) {
+                continue;
             }
 
-            return true;
-        } catch (\Exception $e) {
-            error_log("Migration Error: " . $e->getMessage());
-            throw $e;
+            // Dynamically load and run migration
+            require_once $migrationFile;
+
+            try {
+                $migrationClass = new $fullClassName($db);
+                
+                // Use reflection to check if up() method exists
+                $reflectionClass = new ReflectionClass($migrationClass);
+                if ($reflectionClass->hasMethod('up')) {
+                    $migrationClass->up();
+
+                    // Record migration
+                    $stmt = $db->prepare("INSERT INTO migrations (migration) VALUES (:migration)");
+                    $stmt->execute(['migration' => $migrationFileName]);
+                }
+            } catch (Exception $e) {
+                error_log("Migration Error in {$migrationFileName}: " . $e->getMessage());
+                throw $e;
+            }
         }
     }
 
@@ -103,7 +97,7 @@ class DatabaseService {
         // Get last migration
         $stmt = $db->query("
             SELECT migration FROM migrations 
-            ORDER BY applied_at DESC 
+            ORDER BY ran_at DESC 
             LIMIT 1
         ");
         $lastMigration = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -125,7 +119,7 @@ class DatabaseService {
 
                 // Remove migration record
                 $stmt = $db->prepare("DELETE FROM migrations WHERE migration = :migration");
-                $stmt->execute([':migration' => $migrationFileName]);
+                $stmt->execute(['migration' => $migrationFileName]);
             }
         }
     }
