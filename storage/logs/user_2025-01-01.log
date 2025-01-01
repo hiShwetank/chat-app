@@ -1,2 +1,6 @@
 [2025-01-01 22:43:02] ERROR: Password Reset Email Error | {"user_id":1,"email":"admin@mics.asia","error_message":"Failed to send email: SMTP Error: Could not authenticate."}
 [2025-01-01 22:45:13] ERROR: Password Reset Email Error | {"user_id":1,"email":"admin@mics.asia","error_message":"Failed to send email: SMTP Error: Could not authenticate."}
+[2025-01-01 23:06:38] INFO: Password Reset Token Generated | {"user_id":1,"email":"admin@mics.asia","token_expiry":"2025-01-02 00:06:20"}
+[2025-01-01 23:08:19] INFO: Password Reset Token Generated | {"user_id":1,"email":"admin@mics.asia","token_expiry":"2025-01-02 00:07:58"}
+[2025-01-01 23:17:17] INFO: Password Reset Token Generated | {"user_id":1,"email":"admin@mics.asia","token_expiry":"2025-01-02 00:16:52"}
+[2025-01-01 23:34:41] INFO: Password Reset Token Generated | {"user_id":1,"email":"admin@mics.asia","token_expiry":"2025-01-02 00:34:16"}

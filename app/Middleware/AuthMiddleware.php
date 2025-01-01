@@ -19,16 +19,46 @@ class AuthMiddleware {
         $this->userModel = new UserModel($db);
     }
 
-    public function authenticate() {
+    public function authenticate($allowUnauthorizedRoutes = false) {
         // Reset session if needed
         if (session_status() == PHP_SESSION_NONE) {
             session_start();
+        }
+
+        // List of routes that can be accessed without authentication
+        $unprotectedRoutes = [
+            '/login',
+            '/register', 
+            '/reset-password',  
+            '/forgot-password'  
+        ];
+
+        // Get current request URI
+        $currentRoute = $_SERVER['REQUEST_URI'] ?? '';
+        
+        // Remove query parameters from route
+        $currentRoute = strtok($currentRoute, '?');
+
+        // Debugging log
+        error_log("Authentication Request Debug:");
+        error_log("Current Route: $currentRoute");
+        error_log("Allow Unauthorized: " . ($allowUnauthorizedRoutes ? 'Yes' : 'No'));
+        error_log("Unprotected Routes: " . implode(', ', $unprotectedRoutes));
+
+        // Check if route is unprotected or explicitly allowed
+        if ($allowUnauthorizedRoutes || 
+            in_array($currentRoute, $unprotectedRoutes) || 
+            strpos($currentRoute, '/reset-password') === 0  
+        ) {
+            error_log("Route is unprotected or explicitly allowed");
+            return null;  
         }
 
         // Check for token
         $token = $this->getToken();
 
         if (!$token) {
+            error_log("No authentication token found");
             $this->redirectToLogin("No authentication token found.");
         }
 
@@ -37,15 +67,17 @@ class AuthMiddleware {
             $decoded = JWT::decode($token, new Key($this->secretKey, 'HS256'));
             
             // Verify user exists and is active
-            $user = $this->userModel->getUserById($decoded->user_id);
-            
-            if (!$user) {
+            try {
+                $user = $this->userModel->getUserById($decoded->user_id, false);
+            } catch (\Exception $e) {
+                error_log("User fetch error: " . $e->getMessage());
                 $this->redirectToLogin("User account not found.");
             }
 
             // Validate token claims
             $now = time();
             if ($decoded->exp < $now) {
+                error_log("Token expired. Current time: $now, Token expiry: " . $decoded->exp);
                 $this->redirectToLogin("Session expired. Please log in again.");
             }
 
@@ -56,17 +88,26 @@ class AuthMiddleware {
             $_SESSION['status'] = $user['status'];
             $_SESSION['auth_token'] = $token;
 
+            error_log("Authentication successful for user: " . $user['username']);
             return $user;
         } catch (ExpiredException $e) {
             // Token expired
+            error_log("Token expired exception: " . $e->getMessage());
             $this->redirectToLogin("Session expired. Please log in again.");
         } catch (\Exception $e) {
             // Invalid token or other authentication errors
+            error_log("Authentication error: " . $e->getMessage());
             $this->redirectToLogin("Invalid authentication. Please log in.");
         }
     }
 
     public function redirectToLogin($message = null) {
+        // Log detailed redirection information
+        error_log("Redirecting to Login:");
+        error_log("Redirect Message: " . ($message ?? 'No message'));
+        error_log("Current Request URI: " . ($_SERVER['REQUEST_URI'] ?? 'Unknown'));
+        error_log("Current HTTP Method: " . ($_SERVER['REQUEST_METHOD'] ?? 'Unknown'));
+
         // Clear any existing session data
         $_SESSION = [];
         
@@ -89,6 +130,9 @@ class AuthMiddleware {
         // Prepare error message
         $errorParam = $message ? '?error=' . urlencode($message) : '';
 
+        // Log final redirect details
+        error_log("Redirect URL: /login" . $errorParam);
+
         // Redirect to login page
         header('Location: /login' . $errorParam);
         exit;
@@ -98,9 +142,15 @@ class AuthMiddleware {
         // Check multiple sources for token
         $token = null;
 
+        // Debugging: Log all token sources
+        error_log("Token Sources Debug:");
+        error_log("Cookies: " . print_r($_COOKIE, true));
+        error_log("Session: " . print_r($_SESSION, true));
+        
         // 1. Check cookie
         if (isset($_COOKIE['auth_token'])) {
             $token = $_COOKIE['auth_token'];
+            error_log("Token from Cookie: $token");
         }
 
         // 2. Check Authorization header
@@ -108,19 +158,23 @@ class AuthMiddleware {
             $headers = getallheaders();
             if (isset($headers['Authorization'])) {
                 $token = str_replace('Bearer ', '', $headers['Authorization']);
+                error_log("Token from Authorization Header: $token");
             }
         }
 
         // 3. Check session
         if (!$token && isset($_SESSION['auth_token'])) {
             $token = $_SESSION['auth_token'];
+            error_log("Token from Session: $token");
         }
 
         // 4. Check GET/POST parameters (for API or testing)
         if (!$token && isset($_GET['token'])) {
             $token = $_GET['token'];
+            error_log("Token from GET Parameter: $token");
         }
 
+        error_log("Final Token: " . ($token ? 'Found' : 'Not Found'));
         return $token;
     }
 

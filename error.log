@@ -121,3 +121,100 @@ Stack trace:
 [01-Jan-2025 22:40:38 Europe/Berlin] Password reset email error: Failed to send email: SMTP Error: Could not authenticate.
 [01-Jan-2025 22:40:42 Europe/Berlin] Password reset email error: Failed to send email: SMTP Error: Could not authenticate.
 [01-Jan-2025 22:50:57 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in E:\ai\chat\chat-app\vendor\phpmailer\phpmailer\src\SMTP.php on line 1281
+[01-Jan-2025 22:58:18 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in E:\ai\chat\chat-app\vendor\phpmailer\phpmailer\src\SMTP.php on line 1281
+[01-Jan-2025 23:39:09 Europe/Berlin] Authentication Request Debug:
+[01-Jan-2025 23:39:09 Europe/Berlin] Current Route: /login
+[01-Jan-2025 23:39:09 Europe/Berlin] Allow Unauthorized: Yes
+[01-Jan-2025 23:39:09 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[01-Jan-2025 23:39:09 Europe/Berlin] Route is unprotected or explicitly allowed
+[01-Jan-2025 23:39:09 Europe/Berlin] Authentication Request Debug:
+[01-Jan-2025 23:39:09 Europe/Berlin] Current Route: /chat
+[01-Jan-2025 23:39:09 Europe/Berlin] Allow Unauthorized: No
+[01-Jan-2025 23:39:09 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[01-Jan-2025 23:39:09 Europe/Berlin] Token Sources Debug:
+[01-Jan-2025 23:39:09 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => 38nefl233u8mdnr7gqs3bb3506
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzExNDksImV4cCI6MTczNTc3NDc0OSwidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.E5iOt74Ld2hAs2didUDuLgDT74rMTOztO_H5C3DtGQw
+)
+
+[01-Jan-2025 23:39:09 Europe/Berlin] Session: Array
+(
+)
+
+[01-Jan-2025 23:39:09 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzExNDksImV4cCI6MTczNTc3NDc0OSwidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.E5iOt74Ld2hAs2didUDuLgDT74rMTOztO_H5C3DtGQw
+[01-Jan-2025 23:39:09 Europe/Berlin] Final Token: Found
+[01-Jan-2025 23:39:09 Europe/Berlin] Authentication error: SQLSTATE[HY000]: General error: 1 no such column: g.description
+[01-Jan-2025 23:39:09 Europe/Berlin] Redirecting to Login:
+[01-Jan-2025 23:39:09 Europe/Berlin] Redirect Message: Invalid authentication. Please log in.
+[01-Jan-2025 23:39:09 Europe/Berlin] Current Request URI: /chat
+[01-Jan-2025 23:39:09 Europe/Berlin] Current HTTP Method: GET
+[01-Jan-2025 23:39:09 Europe/Berlin] Redirect URL: /login?error=Invalid+authentication.+Please+log+in.
+[01-Jan-2025 23:39:09 Europe/Berlin] Authentication Request Debug:
+[01-Jan-2025 23:39:09 Europe/Berlin] Current Route: /login
+[01-Jan-2025 23:39:09 Europe/Berlin] Allow Unauthorized: Yes
+[01-Jan-2025 23:39:09 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[01-Jan-2025 23:39:09 Europe/Berlin] Route is unprotected or explicitly allowed
+[01-Jan-2025 23:39:15 Europe/Berlin] Authentication Request Debug:
+[01-Jan-2025 23:39:15 Europe/Berlin] Current Route: /login
+[01-Jan-2025 23:39:15 Europe/Berlin] Allow Unauthorized: Yes
+[01-Jan-2025 23:39:15 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[01-Jan-2025 23:39:15 Europe/Berlin] Route is unprotected or explicitly allowed
+[01-Jan-2025 23:39:15 Europe/Berlin] Authentication Request Debug:
+[01-Jan-2025 23:39:15 Europe/Berlin] Current Route: /chat
+[01-Jan-2025 23:39:15 Europe/Berlin] Allow Unauthorized: No
+[01-Jan-2025 23:39:15 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[01-Jan-2025 23:39:15 Europe/Berlin] Token Sources Debug:
+[01-Jan-2025 23:39:15 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => h4s4ffemeueeejot6sfbmb1kr4
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzExNTUsImV4cCI6MTczNTc3NDc1NSwidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.mCFx3NqAxgvd4h4QVMLf5tXONSZoQCUg9F80XOW-gYs
+)
+
+[01-Jan-2025 23:39:15 Europe/Berlin] Session: Array
+(
+)
+
+[01-Jan-2025 23:39:15 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzExNTUsImV4cCI6MTczNTc3NDc1NSwidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.mCFx3NqAxgvd4h4QVMLf5tXONSZoQCUg9F80XOW-gYs
+[01-Jan-2025 23:39:15 Europe/Berlin] Final Token: Found
+[01-Jan-2025 23:39:15 Europe/Berlin] Authentication error: SQLSTATE[HY000]: General error: 1 no such column: g.description
+[01-Jan-2025 23:39:15 Europe/Berlin] Redirecting to Login:
+[01-Jan-2025 23:39:15 Europe/Berlin] Redirect Message: Invalid authentication. Please log in.
+[01-Jan-2025 23:39:15 Europe/Berlin] Current Request URI: /chat
+[01-Jan-2025 23:39:15 Europe/Berlin] Current HTTP Method: GET
+[01-Jan-2025 23:39:15 Europe/Berlin] Redirect URL: /login?error=Invalid+authentication.+Please+log+in.
+[01-Jan-2025 23:39:15 Europe/Berlin] Authentication Request Debug:
+[01-Jan-2025 23:39:15 Europe/Berlin] Current Route: /login
+[01-Jan-2025 23:39:15 Europe/Berlin] Allow Unauthorized: Yes
+[01-Jan-2025 23:39:15 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[01-Jan-2025 23:39:15 Europe/Berlin] Route is unprotected or explicitly allowed
+[01-Jan-2025 23:41:16 Europe/Berlin] Authentication Request Debug:
+[01-Jan-2025 23:41:16 Europe/Berlin] Current Route: /login
+[01-Jan-2025 23:41:16 Europe/Berlin] Allow Unauthorized: Yes
+[01-Jan-2025 23:41:16 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[01-Jan-2025 23:41:16 Europe/Berlin] Route is unprotected or explicitly allowed
+[01-Jan-2025 23:41:16 Europe/Berlin] Authentication Request Debug:
+[01-Jan-2025 23:41:16 Europe/Berlin] Current Route: /chat
+[01-Jan-2025 23:41:16 Europe/Berlin] Allow Unauthorized: No
+[01-Jan-2025 23:41:16 Europe/Berlin] Unprotected Routes: /login, /register, /reset-password, /forgot-password
+[01-Jan-2025 23:41:16 Europe/Berlin] Token Sources Debug:
+[01-Jan-2025 23:41:16 Europe/Berlin] Cookies: Array
+(
+    [PHPSESSID] => ut58jj5iunc8b7scfa8a7d442e
+    [auth_token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzEyNzYsImV4cCI6MTczNTc3NDg3NiwidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.B-rNq5RPitEDIVpuMGB9EbHVcG98Tlc6oSbzGCMpeAg
+)
+
+[01-Jan-2025 23:41:16 Europe/Berlin] Session: Array
+(
+)
+
+[01-Jan-2025 23:41:16 Europe/Berlin] Token from Cookie: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzU3NzEyNzYsImV4cCI6MTczNTc3NDg3NiwidXNlcl9pZCI6MSwiZW1haWwiOiJhZG1pbkBtaWNzLmFzaWEifQ.B-rNq5RPitEDIVpuMGB9EbHVcG98Tlc6oSbzGCMpeAg
+[01-Jan-2025 23:41:16 Europe/Berlin] Final Token: Found
+[01-Jan-2025 23:41:16 Europe/Berlin] Authentication successful for user: shwetank
+[01-Jan-2025 23:41:16 Europe/Berlin] PHP Deprecated:  Optional parameter $requests declared before required parameter $currentUserId is implicitly treated as a required parameter in E:\ai\chat\chat-app\app\Views\Components\FriendRequests.php on line 8
+[01-Jan-2025 23:41:16 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Views\Components\FriendRequests::__construct(), 1 passed in E:\ai\chat\chat-app\app\Views\chat.php on line 40 and exactly 2 expected in E:\ai\chat\chat-app\app\Views\Components\FriendRequests.php:8
+Stack trace:
+#0 E:\ai\chat\chat-app\app\Views\chat.php(40): App\Views\Components\FriendRequests->__construct(Array)
+#1 E:\ai\chat\chat-app\public\index.php(168): include('E:\\ai\\chat\\chat...')
+#2 {main}
+  thrown in E:\ai\chat\chat-app\app\Views\Components\FriendRequests.php on line 8

@@ -42,24 +42,29 @@ try {
     // Remove query parameters from request
     $request = strtok($request, '?');
 
-    // Check authentication for protected routes
-    $protectedRoutes = ['/chat', '/profile', '/groups', '/friends'];
-    $publicRoutes = ['/', '/login', '/register', '/forgot-password'];
+    // Initialize Authentication Middleware
+    $authMiddleware = new \App\Middleware\AuthMiddleware($db);
 
-    // Check if current route requires authentication
-    $requiresAuth = in_array($request, $protectedRoutes);
-    $isPublicRoute = in_array($request, $publicRoutes);
-
-    // Authentication check
+    // Determine if authentication is required based on route
     $authenticatedUser = null;
     try {
-        if (!$isPublicRoute) {
-            $authenticatedUser = $authMiddleware->authenticate();
-        }
+        // Allow unauthorized routes for reset password, login, etc.
+        $authenticatedUser = $authMiddleware->authenticate(
+            // Allow unauthorized access for specific routes
+            in_array($request, [
+                '/reset-password', 
+                '/login', 
+                '/register', 
+                '/forgot-password'
+            ])
+        );
     } catch (Exception $e) {
-        // If authentication fails and route is protected, redirect to login
-        if ($requiresAuth) {
-            header('Location: /login');
+        // Log authentication errors
+        error_log("Authentication Error: " . $e->getMessage());
+        
+        // Redirect to login for authentication failures
+        if (strpos($request, '/reset-password') !== 0) {
+            header('Location: /login?error=' . urlencode($e->getMessage()));
             exit;
         }
     }
@@ -88,15 +93,23 @@ try {
                 // Include login view with optional error
                 include '../app/Views/auth.php';
             } elseif ($method === 'POST') {
+                // Parse JSON input
                 $data = json_decode(file_get_contents('php://input'), true);
+                
+                if (!$data) {
+                    http_response_code(400);
+                    echo json_encode([
+                        'success' => false, 
+                        'message' => 'Invalid request data'
+                    ]);
+                    exit;
+                }
                 
                 try {
                     $result = $userModel->login($data['email'], $data['password']);
                     
-                    // Generate JWT
-                    $jwt = $userModel->generateToken($result);
-                    
                     // Set authentication cookie
+                    $jwt = $result['token'];
                     setcookie('auth_token', $jwt, time() + 3600, '/', '', true, true);
                     
                     echo json_encode([

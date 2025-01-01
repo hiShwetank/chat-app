@@ -5,17 +5,16 @@ if (!function_exists('base_url')) {
      * Generate a base URL for the application
      * 
      * @param string $path Optional path to append
-     * @return string Complete URL
+     * @return string Full URL
      */
     function base_url($path = '') {
-        // Get the base URL from environment or default
-        $baseUrl = $_ENV['APP_URL'] ?? 'http://localhost:8000';
+        // Prioritize environment variable, fallback to default
+        $baseUrl = $_ENV['BASE_URL'] ?? $_ENV['APP_URL'] ?? 'http://localhost:8000';
         
-        // Trim any trailing slashes from base URL and path
+        // Ensure no double slashes when joining
         $baseUrl = rtrim($baseUrl, '/');
         $path = ltrim($path, '/');
         
-        // Combine base URL and path
         return $path ? "{$baseUrl}/{$path}" : $baseUrl;
     }
 }
@@ -141,5 +140,112 @@ if (!function_exists('generate_uuid')) {
             mt_rand(0, 0x3fff) | 0x8000,
             mt_rand(0, 0xffff), mt_rand(0, 0xffff), mt_rand(0, 0xffff)
         );
+    }
+}
+
+if (!function_exists('get_current_timezone')) {
+    /**
+     * Get the current timezone based on user's location or default
+     * 
+     * @return string Timezone identifier
+     */
+    function get_current_timezone() {
+        // Priority: 1. User setting, 2. ENV, 3. Server default, 4. Fallback
+        $userTimezone = $_SESSION['timezone'] ?? null;
+        $envTimezone = $_ENV['APP_TIMEZONE'] ?? null;
+        
+        // List of common timezones for India
+        $indianTimezones = [
+            'Asia/Kolkata',     // Most common
+            'Asia/Bangalore',
+            'Asia/Chennai',
+            'Asia/Mumbai',
+            'Asia/New_Delhi'
+        ];
+
+        // Determine timezone
+        $timezone = $userTimezone 
+            ?? $envTimezone 
+            ?? date_default_timezone_get() 
+            ?? 'Asia/Kolkata';
+
+        // Validate timezone
+        try {
+            new DateTimeZone($timezone);
+        } catch (Exception $e) {
+            $timezone = 'Asia/Kolkata';
+        }
+
+        return $timezone;
+    }
+}
+
+if (!function_exists('format_localized_date')) {
+    /**
+     * Format date according to localization settings
+     * 
+     * @param mixed $date Date to format
+     * @param string $format Optional date format
+     * @param string $locale Optional locale
+     * @return string Formatted date
+     */
+    function format_localized_date($date = null, $format = 'full', $locale = 'en_IN') {
+        // Normalize date
+        $date = $date ?? new DateTime();
+        if (is_string($date)) {
+            $date = new DateTime($date);
+        }
+
+        // Set timezone
+        $date->setTimezone(new DateTimeZone(get_current_timezone()));
+
+        // Predefined formats
+        $formats = [
+            'full' => 'D, d M Y H:i:s',
+            'short' => 'd/m/Y',
+            'long' => 'l, d F Y',
+            'time' => 'H:i:s',
+            'datetime' => 'd M Y H:i:s'
+        ];
+
+        // Select format
+        $selectedFormat = $formats[$format] ?? $formats['full'];
+
+        // Set locale
+        setlocale(LC_TIME, $locale);
+
+        return $date->format($selectedFormat);
+    }
+}
+
+if (!function_exists('get_country_code')) {
+    /**
+     * Get the country code based on current settings
+     * 
+     * @return string Country code (default 'IN')
+     */
+    function get_country_code() {
+        // Priority: 1. User setting, 2. ENV, 3. Fallback
+        return $_SESSION['country_code'] 
+            ?? $_ENV['APP_COUNTRY_CODE'] 
+            ?? 'IN';
+    }
+}
+
+if (!function_exists('convert_to_local_time')) {
+    /**
+     * Convert a timestamp to local time
+     * 
+     * @param mixed $timestamp Timestamp to convert
+     * @return DateTime Local time
+     */
+    function convert_to_local_time($timestamp = null) {
+        $timestamp = $timestamp ?? time();
+        
+        // Create DateTime object in current timezone
+        $dateTime = new DateTime('@' . $timestamp);
+        $dateTime->setTimezone(new DateTimeZone(get_current_timezone()));
+        
+        return $dateTime;
     }
 }

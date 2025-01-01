@@ -29,6 +29,7 @@
             align-items: center;
             min-height: 100vh;
             overflow: hidden;
+            color: var(--text-color);
         }
 
         .container {
@@ -40,6 +41,7 @@
             box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             border-radius: 15px;
+            perspective: 1000px;
         }
 
         .forms-container {
@@ -62,11 +64,13 @@
             position: absolute;
             opacity: 0;
             pointer-events: none;
+            transform: rotateY(-90deg);
         }
 
         .form.active {
             opacity: 1;
             pointer-events: all;
+            transform: rotateY(0);
             z-index: 1;
         }
 

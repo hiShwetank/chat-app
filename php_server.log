@@ -1,143 +1,648 @@
-[Thu Jan  2 02:55:12 2025] PHP 8.2.0 Development Server (http://localhost:8000) started
-[Thu Jan  2 02:55:15 2025] [::1]:49216 Accepted
-[Thu Jan  2 02:55:15 2025] [::1]:49217 Accepted
-[Thu Jan  2 02:55:15 2025] [::1]:49216 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
-[Thu Jan  2 02:55:15 2025] [::1]:49216 Closing
-[Thu Jan  2 02:55:28 2025] [::1]:49249 Accepted
-[Thu Jan  2 02:55:28 2025] [::1]:49217 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
-[Thu Jan  2 02:55:28 2025] [::1]:49217 Closing
-[Thu Jan  2 02:55:29 2025] [::1]:49249 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
-[Thu Jan  2 02:55:29 2025] [::1]:49249 Closing
-[Thu Jan  2 02:55:29 2025] [::1]:49253 Accepted
-[Thu Jan  2 02:55:30 2025] [::1]:49254 Accepted
-[Thu Jan  2 02:55:30 2025] [::1]:49253 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
-[Thu Jan  2 02:55:30 2025] [::1]:49253 Closing
-[Thu Jan  2 02:55:46 2025] [::1]:49254 [200]: GET /
-[Thu Jan  2 02:55:46 2025] [::1]:49254 Closing
-[Thu Jan  2 02:55:46 2025] [::1]:49301 Accepted
-[Thu Jan  2 02:56:08 2025] [::1]:49301 [200]: POST /login
-[Thu Jan  2 02:56:08 2025] [::1]:49301 Closing
-[Thu Jan  2 02:56:08 2025] [::1]:49357 Accepted
-[Thu Jan  2 02:56:08 2025] [::1]:49357 [302]: GET /chat
-[Thu Jan  2 02:56:08 2025] [::1]:49357 Closing
-[Thu Jan  2 02:56:08 2025] [::1]:49358 Accepted
-[Thu Jan  2 02:56:08 2025] [::1]:49358 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
-[Thu Jan  2 02:56:08 2025] [::1]:49358 Closing
-[Thu Jan  2 02:56:26 2025] [::1]:49403 Accepted
-[Thu Jan  2 02:56:26 2025] [::1]:49403 [200]: POST /login
-[Thu Jan  2 02:56:26 2025] [::1]:49403 Closing
-[Thu Jan  2 02:56:26 2025] [::1]:49406 Accepted
-[Thu Jan  2 02:56:26 2025] [::1]:49407 Accepted
-[Thu Jan  2 02:56:26 2025] [::1]:49406 [302]: GET /chat
-[Thu Jan  2 02:56:26 2025] [::1]:49406 Closing
-[Thu Jan  2 02:56:26 2025] [::1]:49407 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
-[Thu Jan  2 02:56:26 2025] [::1]:49407 Closing
-[Thu Jan  2 02:57:41 2025] [::1]:49949 Accepted
-[Thu Jan  2 02:57:41 2025] [::1]:49950 Accepted
-[Thu Jan  2 02:57:41 2025] [::1]:49949 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
-[Thu Jan  2 02:57:41 2025] [::1]:49949 Closing
-[Thu Jan  2 02:58:06 2025] [::1]:49950 [400]: POST /register
-[Thu Jan  2 02:58:06 2025] [::1]:49950 Closing
-[Thu Jan  2 02:58:20 2025] [::1]:50099 Accepted
-[Thu Jan  2 02:58:20 2025] [::1]:50099 [200]: POST /login
-[Thu Jan  2 02:58:20 2025] [::1]:50099 Closing
-[Thu Jan  2 02:58:20 2025] [::1]:50100 Accepted
-[Thu Jan  2 02:58:20 2025] [::1]:50100 [302]: GET /chat
-[Thu Jan  2 02:58:20 2025] [::1]:50100 Closing
-[Thu Jan  2 02:58:20 2025] [::1]:50101 Accepted
-[Thu Jan  2 02:58:20 2025] [::1]:50101 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
-[Thu Jan  2 02:58:20 2025] [::1]:50101 Closing
-[Thu Jan  2 02:58:39 2025] [::1]:50140 Accepted
-[Thu Jan  2 02:58:39 2025] [::1]:50140 [200]: POST /login
-[Thu Jan  2 02:58:39 2025] [::1]:50140 Closing
-[Thu Jan  2 02:58:39 2025] [::1]:50141 Accepted
-[Thu Jan  2 02:58:39 2025] [::1]:50141 [302]: GET /chat
-[Thu Jan  2 02:58:39 2025] [::1]:50141 Closing
-[Thu Jan  2 02:58:39 2025] [::1]:50142 Accepted
-[Thu Jan  2 02:58:39 2025] [::1]:50142 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
-[Thu Jan  2 02:58:39 2025] [::1]:50142 Closing
-[Thu Jan  2 02:58:41 2025] [::1]:50147 Accepted
-[Thu Jan  2 02:58:45 2025] [::1]:50147 [200]: POST /forgot-password
-[Thu Jan  2 02:58:45 2025] [::1]:50147 Closing
-[Thu Jan  2 02:58:52 2025] [::1]:50173 Accepted
-[Thu Jan  2 02:58:52 2025] [::1]:50173 [200]: POST /forgot-password
-[Thu Jan  2 02:58:52 2025] [::1]:50173 Closing
-[Thu Jan  2 03:01:20 2025] [::1]:50734 Accepted
-[Thu Jan  2 03:01:20 2025] [::1]:50735 Accepted
-[Thu Jan  2 03:01:20 2025] [::1]:50734 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
-[Thu Jan  2 03:01:20 2025] [::1]:50734 Closing
-[Thu Jan  2 03:01:53 2025] [::1]:50735 [400]: POST /forgot-password
-[Thu Jan  2 03:01:53 2025] [::1]:50735 Closing
-[Thu Jan  2 03:02:09 2025] [::1]:50867 Accepted
-[Thu Jan  2 03:02:12 2025] [::1]:50867 [400]: POST /forgot-password
-[Thu Jan  2 03:02:12 2025] [::1]:50867 Closing
-[Thu Jan  2 03:03:36 2025] [::1]:51428 Accepted
-[Thu Jan  2 03:03:36 2025] [::1]:51428 [200]: POST /forgot-password - Uncaught Error: Class "Monolog\Logger" not found in E:\ai\chat\chat-app\app\Services\EmailService.php:14
+[Thu Jan  2 03:35:51 2025] PHP 8.2.0 Development Server (http://localhost:8000) started
+[Thu Jan  2 03:36:02 2025] [::1]:58632 Accepted
+[Thu Jan  2 03:36:02 2025] [::1]:58633 Accepted
+[Thu Jan  2 03:36:02 2025] [::1]:58632 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:36:02 2025] [::1]:58632 Closing
+[Thu Jan  2 03:36:03 2025] [::1]:58633 [404]: GET /favicon.ico - No such file or directory
+[Thu Jan  2 03:36:03 2025] [::1]:58633 Closing
+[Thu Jan  2 03:36:09 2025] [::1]:58648 Accepted
+[Thu Jan  2 03:36:38 2025] [::1]:58648 [200]: POST /forgot-password
+[Thu Jan  2 03:36:38 2025] [::1]:58648 Closing
+[Thu Jan  2 03:37:58 2025] [::1]:59003 Accepted
+[Thu Jan  2 03:38:19 2025] [::1]:59003 [200]: POST /forgot-password
+[Thu Jan  2 03:38:19 2025] [::1]:59003 Closing
+[Thu Jan  2 03:41:05 2025] [::1]:59709 Accepted
+[Thu Jan  2 03:41:05 2025] [::1]:59709 [302]: GET /reset-password?token=2cd7b53eb2ccfcefde2573b7744e1a15e2bd735c3900ac8c408c683ef3dd9373
+[Thu Jan  2 03:41:05 2025] [::1]:59709 Closing
+[Thu Jan  2 03:41:05 2025] [::1]:59714 Accepted
+[Thu Jan  2 03:41:05 2025] [::1]:59714 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:41:05 2025] [::1]:59714 Closing
+[Thu Jan  2 03:41:29 2025] [::1]:59784 Accepted
+[Thu Jan  2 03:41:29 2025] [::1]:59784 [302]: GET /reset-password?token=2cd7b53eb2ccfcefde2573b7744e1a15e2bd735c3900ac8c408c683ef3dd9373
+[Thu Jan  2 03:41:29 2025] [::1]:59784 Closing
+[Thu Jan  2 03:41:29 2025] [::1]:59785 Accepted
+[Thu Jan  2 03:41:29 2025] [::1]:59785 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:41:29 2025] [::1]:59785 Closing
+[Thu Jan  2 03:46:52 2025] [::1]:60785 Accepted
+[Thu Jan  2 03:47:17 2025] [::1]:60785 [200]: POST /forgot-password
+[Thu Jan  2 03:47:17 2025] [::1]:60785 Closing
+[Thu Jan  2 03:47:38 2025] [::1]:60906 Accepted
+[Thu Jan  2 03:47:38 2025] [::1]:60906 [302]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:47:38 2025] [::1]:60906 Closing
+[Thu Jan  2 03:47:38 2025] [::1]:60913 Accepted
+[Thu Jan  2 03:47:38 2025] [::1]:60913 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:47:38 2025] [::1]:60913 Closing
+[Thu Jan  2 03:49:26 2025] [::1]:61204 Accepted
+[Thu Jan  2 03:49:26 2025] [::1]:61204 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:49:26 2025] [::1]:61204 Closing
+[Thu Jan  2 03:49:26 2025] [::1]:61207 Accepted
+[Thu Jan  2 03:49:26 2025] [::1]:61207 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:49:26 2025] [::1]:61207 Closing
+[Thu Jan  2 03:50:32 2025] [::1]:61491 Accepted
+[Thu Jan  2 03:50:32 2025] [::1]:61492 Accepted
+[Thu Jan  2 03:50:32 2025] [::1]:61491 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:32 2025] [::1]:61491 Closing
+[Thu Jan  2 03:50:32 2025] [::1]:61492 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:32 2025] [::1]:61492 Closing
+[Thu Jan  2 03:50:34 2025] [::1]:61499 Accepted
+[Thu Jan  2 03:50:34 2025] [::1]:61499 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:34 2025] [::1]:61499 Closing
+[Thu Jan  2 03:50:34 2025] [::1]:61500 Accepted
+[Thu Jan  2 03:50:34 2025] [::1]:61500 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:34 2025] [::1]:61500 Closing
+[Thu Jan  2 03:50:34 2025] [::1]:61503 Accepted
+[Thu Jan  2 03:50:34 2025] [::1]:61503 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:34 2025] [::1]:61503 Closing
+[Thu Jan  2 03:50:34 2025] [::1]:61504 Accepted
+[Thu Jan  2 03:50:34 2025] [::1]:61504 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:34 2025] [::1]:61504 Closing
+[Thu Jan  2 03:50:35 2025] [::1]:61508 Accepted
+[Thu Jan  2 03:50:35 2025] [::1]:61508 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:35 2025] [::1]:61508 Closing
+[Thu Jan  2 03:50:35 2025] [::1]:61509 Accepted
+[Thu Jan  2 03:50:35 2025] [::1]:61509 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:35 2025] [::1]:61509 Closing
+[Thu Jan  2 03:50:36 2025] [::1]:61510 Accepted
+[Thu Jan  2 03:50:36 2025] [::1]:61511 Accepted
+[Thu Jan  2 03:50:36 2025] [::1]:61510 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:36 2025] [::1]:61510 Closing
+[Thu Jan  2 03:50:36 2025] [::1]:61511 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:36 2025] [::1]:61511 Closing
+[Thu Jan  2 03:50:36 2025] [::1]:61512 Accepted
+[Thu Jan  2 03:50:36 2025] [::1]:61513 Accepted
+[Thu Jan  2 03:50:36 2025] [::1]:61512 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:36 2025] [::1]:61512 Closing
+[Thu Jan  2 03:50:36 2025] [::1]:61513 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:36 2025] [::1]:61513 Closing
+[Thu Jan  2 03:50:36 2025] [::1]:61516 Accepted
+[Thu Jan  2 03:50:36 2025] [::1]:61516 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:36 2025] [::1]:61516 Closing
+[Thu Jan  2 03:50:36 2025] [::1]:61517 Accepted
+[Thu Jan  2 03:50:36 2025] [::1]:61517 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:36 2025] [::1]:61517 Closing
+[Thu Jan  2 03:50:36 2025] [::1]:61518 Accepted
+[Thu Jan  2 03:50:36 2025] [::1]:61519 Accepted
+[Thu Jan  2 03:50:36 2025] [::1]:61518 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:36 2025] [::1]:61518 Closing
+[Thu Jan  2 03:50:36 2025] [::1]:61519 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:36 2025] [::1]:61519 Closing
+[Thu Jan  2 03:50:37 2025] [::1]:61520 Accepted
+[Thu Jan  2 03:50:37 2025] [::1]:61520 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:37 2025] [::1]:61520 Closing
+[Thu Jan  2 03:50:37 2025] [::1]:61521 Accepted
+[Thu Jan  2 03:50:37 2025] [::1]:61521 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:37 2025] [::1]:61521 Closing
+[Thu Jan  2 03:50:37 2025] [::1]:61522 Accepted
+[Thu Jan  2 03:50:37 2025] [::1]:61523 Accepted
+[Thu Jan  2 03:50:37 2025] [::1]:61522 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:37 2025] [::1]:61522 Closing
+[Thu Jan  2 03:50:37 2025] [::1]:61523 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:37 2025] [::1]:61523 Closing
+[Thu Jan  2 03:50:37 2025] [::1]:61525 Accepted
+[Thu Jan  2 03:50:37 2025] [::1]:61526 Accepted
+[Thu Jan  2 03:50:37 2025] [::1]:61525 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:37 2025] [::1]:61525 Closing
+[Thu Jan  2 03:50:37 2025] [::1]:61526 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:37 2025] [::1]:61526 Closing
+[Thu Jan  2 03:50:37 2025] [::1]:61529 Accepted
+[Thu Jan  2 03:50:37 2025] [::1]:61530 Accepted
+[Thu Jan  2 03:50:37 2025] [::1]:61529 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:37 2025] [::1]:61529 Closing
+[Thu Jan  2 03:50:37 2025] [::1]:61530 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:37 2025] [::1]:61530 Closing
+[Thu Jan  2 03:50:37 2025] [::1]:61531 Accepted
+[Thu Jan  2 03:50:37 2025] [::1]:61532 Accepted
+[Thu Jan  2 03:50:37 2025] [::1]:61531 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:37 2025] [::1]:61531 Closing
+[Thu Jan  2 03:50:37 2025] [::1]:61532 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:37 2025] [::1]:61532 Closing
+[Thu Jan  2 03:50:38 2025] [::1]:61533 Accepted
+[Thu Jan  2 03:50:38 2025] [::1]:61534 Accepted
+[Thu Jan  2 03:50:38 2025] [::1]:61533 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:38 2025] [::1]:61533 Closing
+[Thu Jan  2 03:50:38 2025] [::1]:61534 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:38 2025] [::1]:61534 Closing
+[Thu Jan  2 03:50:38 2025] [::1]:61535 Accepted
+[Thu Jan  2 03:50:38 2025] [::1]:61535 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:38 2025] [::1]:61535 Closing
+[Thu Jan  2 03:50:38 2025] [::1]:61536 Accepted
+[Thu Jan  2 03:50:38 2025] [::1]:61536 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:38 2025] [::1]:61536 Closing
+[Thu Jan  2 03:50:38 2025] [::1]:61537 Accepted
+[Thu Jan  2 03:50:38 2025] [::1]:61537 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:38 2025] [::1]:61537 Closing
+[Thu Jan  2 03:50:38 2025] [::1]:61538 Accepted
+[Thu Jan  2 03:50:38 2025] [::1]:61538 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:38 2025] [::1]:61538 Closing
+[Thu Jan  2 03:50:48 2025] [::1]:61571 Accepted
+[Thu Jan  2 03:50:48 2025] [::1]:61572 Accepted
+[Thu Jan  2 03:50:48 2025] [::1]:61571 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:48 2025] [::1]:61571 Closing
+[Thu Jan  2 03:50:48 2025] [::1]:61572 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:48 2025] [::1]:61572 Closing
+[Thu Jan  2 03:50:49 2025] [::1]:61576 Accepted
+[Thu Jan  2 03:50:49 2025] [::1]:61577 Accepted
+[Thu Jan  2 03:50:49 2025] [::1]:61576 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:49 2025] [::1]:61576 Closing
+[Thu Jan  2 03:50:49 2025] [::1]:61577 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:49 2025] [::1]:61577 Closing
+[Thu Jan  2 03:50:49 2025] [::1]:61580 Accepted
+[Thu Jan  2 03:50:49 2025] [::1]:61581 Accepted
+[Thu Jan  2 03:50:49 2025] [::1]:61580 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:50:49 2025] [::1]:61580 Closing
+[Thu Jan  2 03:50:49 2025] [::1]:61581 [404]: GET /assets/css/auth.css - No such file or directory
+[Thu Jan  2 03:50:49 2025] [::1]:61581 Closing
+[Thu Jan  2 03:52:39 2025] [::1]:62093 Accepted
+[Thu Jan  2 03:52:39 2025] [::1]:62094 Accepted
+[Thu Jan  2 03:52:39 2025] [::1]:62093 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:52:39 2025] [::1]:62093 Closing
+[Thu Jan  2 03:52:41 2025] [::1]:62104 Accepted
+[Thu Jan  2 03:52:41 2025] [::1]:62094 [200]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:52:41 2025] [::1]:62094 Closing
+[Thu Jan  2 03:52:50 2025] [::1]:62104 [200]: POST /reset-password
+[Thu Jan  2 03:52:50 2025] [::1]:62104 Closing
+[Thu Jan  2 03:52:52 2025] [::1]:62137 Accepted
+[Thu Jan  2 03:52:52 2025] [::1]:62138 Accepted
+[Thu Jan  2 03:52:52 2025] [::1]:62137 [200]: GET /login
+[Thu Jan  2 03:52:52 2025] [::1]:62137 Closing
+[Thu Jan  2 03:53:08 2025] [::1]:62138 [200]: POST /login
+[Thu Jan  2 03:53:08 2025] [::1]:62138 Closing
+[Thu Jan  2 03:53:08 2025] [::1]:62187 Accepted
+[Thu Jan  2 03:53:08 2025] [::1]:62188 Accepted
+[Thu Jan  2 03:53:08 2025] [::1]:62187 [302]: GET /chat
+[Thu Jan  2 03:53:08 2025] [::1]:62187 Closing
+[Thu Jan  2 03:53:08 2025] [::1]:62188 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:53:08 2025] [::1]:62188 Closing
+[Thu Jan  2 03:53:25 2025] [::1]:62228 Accepted
+[Thu Jan  2 03:53:25 2025] [::1]:62228 [200]: POST /login
+[Thu Jan  2 03:53:25 2025] [::1]:62228 Closing
+[Thu Jan  2 03:53:25 2025] [::1]:62229 Accepted
+[Thu Jan  2 03:53:25 2025] [::1]:62230 Accepted
+[Thu Jan  2 03:53:25 2025] [::1]:62229 [302]: GET /chat
+[Thu Jan  2 03:53:25 2025] [::1]:62229 Closing
+[Thu Jan  2 03:53:25 2025] [::1]:62230 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:53:25 2025] [::1]:62230 Closing
+[Thu Jan  2 03:54:38 2025] [::1]:62440 Accepted
+[Thu Jan  2 03:54:38 2025] [::1]:62440 [401]: POST /login
+[Thu Jan  2 03:54:38 2025] [::1]:62440 Closing
+[Thu Jan  2 03:55:16 2025] [::1]:62640 Accepted
+[Thu Jan  2 03:55:16 2025] [::1]:62640 [401]: POST /login
+[Thu Jan  2 03:55:16 2025] [::1]:62640 Closing
+[Thu Jan  2 03:55:17 2025] [::1]:62665 Accepted
+[Thu Jan  2 03:55:17 2025] [::1]:62665 [401]: POST /login
+[Thu Jan  2 03:55:17 2025] [::1]:62665 Closing
+[Thu Jan  2 03:56:47 2025] [::1]:63014 Accepted
+[Thu Jan  2 03:56:47 2025] [::1]:63014 [200]: POST /login
+[Thu Jan  2 03:56:47 2025] [::1]:63014 Closing
+[Thu Jan  2 03:56:47 2025] [::1]:63018 Accepted
+[Thu Jan  2 03:56:47 2025] [::1]:63019 Accepted
+[Thu Jan  2 03:56:47 2025] [::1]:63018 [302]: GET /chat
+[Thu Jan  2 03:56:47 2025] [::1]:63018 Closing
+[Thu Jan  2 03:56:47 2025] [::1]:63019 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:56:47 2025] [::1]:63019 Closing
+[Thu Jan  2 03:56:51 2025] [::1]:63037 Accepted
+[Thu Jan  2 03:56:51 2025] [::1]:63038 Accepted
+[Thu Jan  2 03:56:51 2025] [::1]:63037 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:56:51 2025] [::1]:63037 Closing
+[Thu Jan  2 03:56:55 2025] [::1]:63048 Accepted
+[Thu Jan  2 03:56:55 2025] [::1]:63038 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:56:55 2025] [::1]:63038 Closing
+[Thu Jan  2 03:57:36 2025] [::1]:63162 Accepted
+[Thu Jan  2 03:57:36 2025] [::1]:63048 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:36 2025] [::1]:63048 Closing
+[Thu Jan  2 03:57:37 2025] [::1]:63165 Accepted
+[Thu Jan  2 03:57:37 2025] [::1]:63162 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:37 2025] [::1]:63162 Closing
+[Thu Jan  2 03:57:38 2025] [::1]:63165 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:38 2025] [::1]:63165 Closing
+[Thu Jan  2 03:57:38 2025] [::1]:63168 Accepted
+[Thu Jan  2 03:57:38 2025] [::1]:63171 Accepted
+[Thu Jan  2 03:57:38 2025] [::1]:63168 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:38 2025] [::1]:63168 Closing
+[Thu Jan  2 03:57:38 2025] [::1]:63171 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:38 2025] [::1]:63171 Closing
+[Thu Jan  2 03:57:38 2025] [::1]:63172 Accepted
+[Thu Jan  2 03:57:39 2025] [::1]:63173 Accepted
+[Thu Jan  2 03:57:39 2025] [::1]:63172 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:39 2025] [::1]:63172 Closing
+[Thu Jan  2 03:57:39 2025] [::1]:63176 Accepted
+[Thu Jan  2 03:57:39 2025] [::1]:63173 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:39 2025] [::1]:63173 Closing
+[Thu Jan  2 03:57:39 2025] [::1]:63176 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:39 2025] [::1]:63176 Closing
+[Thu Jan  2 03:57:39 2025] [::1]:63178 Accepted
+[Thu Jan  2 03:57:39 2025] [::1]:63178 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:39 2025] [::1]:63178 Closing
+[Thu Jan  2 03:57:39 2025] [::1]:63179 Accepted
+[Thu Jan  2 03:57:40 2025] [::1]:63179 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:40 2025] [::1]:63179 Closing
+[Thu Jan  2 03:57:40 2025] [::1]:63180 Accepted
+[Thu Jan  2 03:57:40 2025] [::1]:63180 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:40 2025] [::1]:63180 Closing
+[Thu Jan  2 03:57:40 2025] [::1]:63181 Accepted
+[Thu Jan  2 03:57:40 2025] [::1]:63183 Accepted
+[Thu Jan  2 03:57:40 2025] [::1]:63181 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:40 2025] [::1]:63181 Closing
+[Thu Jan  2 03:57:40 2025] [::1]:63183 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:40 2025] [::1]:63183 Closing
+[Thu Jan  2 03:57:40 2025] [::1]:63185 Accepted
+[Thu Jan  2 03:57:40 2025] [::1]:63185 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:40 2025] [::1]:63185 Closing
+[Thu Jan  2 03:57:40 2025] [::1]:63187 Accepted
+[Thu Jan  2 03:57:41 2025] [::1]:63187 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:41 2025] [::1]:63187 Closing
+[Thu Jan  2 03:57:41 2025] [::1]:63188 Accepted
+[Thu Jan  2 03:57:41 2025] [::1]:63188 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:41 2025] [::1]:63188 Closing
+[Thu Jan  2 03:57:41 2025] [::1]:63189 Accepted
+[Thu Jan  2 03:57:41 2025] [::1]:63191 Accepted
+[Thu Jan  2 03:57:41 2025] [::1]:63189 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:41 2025] [::1]:63189 Closing
+[Thu Jan  2 03:57:41 2025] [::1]:63191 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:41 2025] [::1]:63191 Closing
+[Thu Jan  2 03:57:41 2025] [::1]:63193 Accepted
+[Thu Jan  2 03:57:42 2025] [::1]:63193 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:42 2025] [::1]:63193 Closing
+[Thu Jan  2 03:57:42 2025] [::1]:63194 Accepted
+[Thu Jan  2 03:57:43 2025] [::1]:63194 [200]: POST /login
+[Thu Jan  2 03:57:43 2025] [::1]:63194 Closing
+[Thu Jan  2 03:57:43 2025] [::1]:63200 Accepted
+[Thu Jan  2 03:57:43 2025] [::1]:63200 [302]: GET /chat
+[Thu Jan  2 03:57:43 2025] [::1]:63200 Closing
+[Thu Jan  2 03:57:43 2025] [::1]:63201 Accepted
+[Thu Jan  2 03:57:43 2025] [::1]:63201 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:43 2025] [::1]:63201 Closing
+[Thu Jan  2 03:57:44 2025] [::1]:63204 Accepted
+[Thu Jan  2 03:57:44 2025] [::1]:63204 [200]: POST /login
+[Thu Jan  2 03:57:44 2025] [::1]:63204 Closing
+[Thu Jan  2 03:57:44 2025] [::1]:63206 Accepted
+[Thu Jan  2 03:57:44 2025] [::1]:63206 [302]: GET /chat
+[Thu Jan  2 03:57:44 2025] [::1]:63206 Closing
+[Thu Jan  2 03:57:44 2025] [::1]:63207 Accepted
+[Thu Jan  2 03:57:44 2025] [::1]:63207 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:44 2025] [::1]:63207 Closing
+[Thu Jan  2 03:57:45 2025] [::1]:63208 Accepted
+[Thu Jan  2 03:57:45 2025] [::1]:63208 [200]: POST /login
+[Thu Jan  2 03:57:45 2025] [::1]:63208 Closing
+[Thu Jan  2 03:57:45 2025] [::1]:63210 Accepted
+[Thu Jan  2 03:57:45 2025] [::1]:63210 [302]: GET /chat
+[Thu Jan  2 03:57:45 2025] [::1]:63210 Closing
+[Thu Jan  2 03:57:45 2025] [::1]:63211 Accepted
+[Thu Jan  2 03:57:45 2025] [::1]:63211 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:45 2025] [::1]:63211 Closing
+[Thu Jan  2 03:57:45 2025] [::1]:63213 Accepted
+[Thu Jan  2 03:57:46 2025] [::1]:63213 [200]: POST /login
+[Thu Jan  2 03:57:46 2025] [::1]:63213 Closing
+[Thu Jan  2 03:57:46 2025] [::1]:63214 Accepted
+[Thu Jan  2 03:57:46 2025] [::1]:63214 [302]: GET /chat
+[Thu Jan  2 03:57:46 2025] [::1]:63214 Closing
+[Thu Jan  2 03:57:46 2025] [::1]:63215 Accepted
+[Thu Jan  2 03:57:46 2025] [::1]:63215 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:46 2025] [::1]:63215 Closing
+[Thu Jan  2 03:57:46 2025] [::1]:63218 Accepted
+[Thu Jan  2 03:57:46 2025] [::1]:63218 [200]: POST /login
+[Thu Jan  2 03:57:46 2025] [::1]:63218 Closing
+[Thu Jan  2 03:57:46 2025] [::1]:63220 Accepted
+[Thu Jan  2 03:57:46 2025] [::1]:63220 [302]: GET /chat
+[Thu Jan  2 03:57:46 2025] [::1]:63220 Closing
+[Thu Jan  2 03:57:46 2025] [::1]:63221 Accepted
+[Thu Jan  2 03:57:46 2025] [::1]:63221 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:46 2025] [::1]:63221 Closing
+[Thu Jan  2 03:57:47 2025] [::1]:63222 Accepted
+[Thu Jan  2 03:57:47 2025] [::1]:63222 [200]: POST /login
+[Thu Jan  2 03:57:47 2025] [::1]:63222 Closing
+[Thu Jan  2 03:57:47 2025] [::1]:63223 Accepted
+[Thu Jan  2 03:57:47 2025] [::1]:63223 [302]: GET /chat
+[Thu Jan  2 03:57:47 2025] [::1]:63223 Closing
+[Thu Jan  2 03:57:47 2025] [::1]:63224 Accepted
+[Thu Jan  2 03:57:47 2025] [::1]:63224 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:47 2025] [::1]:63224 Closing
+[Thu Jan  2 03:57:47 2025] [::1]:63226 Accepted
+[Thu Jan  2 03:57:47 2025] [::1]:63226 [200]: POST /login
+[Thu Jan  2 03:57:47 2025] [::1]:63226 Closing
+[Thu Jan  2 03:57:47 2025] [::1]:63230 Accepted
+[Thu Jan  2 03:57:47 2025] [::1]:63231 Accepted
+[Thu Jan  2 03:57:47 2025] [::1]:63230 [302]: GET /chat
+[Thu Jan  2 03:57:47 2025] [::1]:63230 Closing
+[Thu Jan  2 03:57:47 2025] [::1]:63231 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:57:47 2025] [::1]:63231 Closing
+[Thu Jan  2 03:58:08 2025] [::1]:63288 Accepted
+[Thu Jan  2 03:58:08 2025] [::1]:63288 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:58:08 2025] [::1]:63288 Closing
+[Thu Jan  2 03:59:36 2025] [::1]:63529 Accepted
+[Thu Jan  2 03:59:36 2025] [::1]:63530 Accepted
+[Thu Jan  2 03:59:36 2025] [::1]:63529 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:59:36 2025] [::1]:63529 Closing
+[Thu Jan  2 03:59:38 2025] [::1]:63530 [302]: GET /reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104
+[Thu Jan  2 03:59:38 2025] [::1]:63530 Closing
+[Thu Jan  2 03:59:38 2025] [::1]:63539 Accepted
+[Thu Jan  2 03:59:38 2025] [::1]:63539 [200]: GET /login?error=Invalid+or+expired+reset+token.
+[Thu Jan  2 03:59:38 2025] [::1]:63539 Closing
+[Thu Jan  2 04:00:38 2025] [::1]:63693 Accepted
+[Thu Jan  2 04:00:38 2025] [::1]:63694 Accepted
+[Thu Jan  2 04:00:38 2025] [::1]:63693 [200]: GET /login?error=Invalid+or+expired+reset+token.
+[Thu Jan  2 04:00:38 2025] [::1]:63693 Closing
+[Thu Jan  2 04:00:38 2025] [::1]:63697 Accepted
+[Thu Jan  2 04:00:38 2025] [::1]:63694 [200]: GET /login?error=Invalid+or+expired+reset+token.
+[Thu Jan  2 04:00:38 2025] [::1]:63694 Closing
+[Thu Jan  2 04:01:09 2025] [::1]:63697 [200]: GET /login?error=Invalid+or+expired+reset+token.
+[Thu Jan  2 04:01:09 2025] [::1]:63697 Closing
+[Thu Jan  2 04:01:09 2025] [::1]:63785 Accepted
+[Thu Jan  2 04:01:10 2025] [::1]:63785 [200]: GET /login?error=Invalid+or+expired+reset+token.
+[Thu Jan  2 04:01:10 2025] [::1]:63785 Closing
+[Thu Jan  2 04:01:10 2025] [::1]:63789 Accepted
+[Thu Jan  2 04:01:10 2025] [::1]:63790 Accepted
+[Thu Jan  2 04:01:10 2025] [::1]:63789 [200]: GET /login?error=Invalid+or+expired+reset+token.
+[Thu Jan  2 04:01:10 2025] [::1]:63789 Closing
+[Thu Jan  2 04:01:10 2025] [::1]:63790 [200]: GET /login?error=Invalid+or+expired+reset+token.
+[Thu Jan  2 04:01:10 2025] [::1]:63790 Closing
+[Thu Jan  2 04:01:10 2025] [::1]:63792 Accepted
+[Thu Jan  2 04:01:10 2025] [::1]:63792 [200]: GET /login?error=Invalid+or+expired+reset+token.
+[Thu Jan  2 04:01:10 2025] [::1]:63792 Closing
+[Thu Jan  2 04:01:10 2025] [::1]:63793 Accepted
+[Thu Jan  2 04:01:10 2025] [::1]:63793 [200]: GET /login?error=Invalid+or+expired+reset+token.
+[Thu Jan  2 04:01:10 2025] [::1]:63793 Closing
+[Thu Jan  2 04:01:10 2025] [::1]:63795 Accepted
+[Thu Jan  2 04:01:11 2025] [::1]:63797 Accepted
+[Thu Jan  2 04:01:11 2025] [::1]:63795 [200]: GET /login?error=Invalid+or+expired+reset+token.
+[Thu Jan  2 04:01:11 2025] [::1]:63795 Closing
+[Thu Jan  2 04:01:12 2025] [::1]:63797 [200]: GET /login?error=Invalid+or+expired+reset+token.
+[Thu Jan  2 04:01:12 2025] [::1]:63797 Closing
+[Thu Jan  2 04:01:12 2025] [::1]:63800 Accepted
+[Thu Jan  2 04:02:22 2025] [::1]:63994 Accepted
+[Thu Jan  2 04:02:22 2025] [::1]:63994 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:02:22 2025] [::1]:63994 Closing
+[Thu Jan  2 04:02:23 2025] [::1]:64001 Accepted
+[Thu Jan  2 04:02:23 2025] [::1]:64001 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:02:23 2025] [::1]:64001 Closing
+[Thu Jan  2 04:02:24 2025] [::1]:64002 Accepted
+[Thu Jan  2 04:02:24 2025] [::1]:64002 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:02:24 2025] [::1]:64002 Closing
+[Thu Jan  2 04:02:24 2025] [::1]:64004 Accepted
+[Thu Jan  2 04:02:24 2025] [::1]:64004 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:02:24 2025] [::1]:64004 Closing
+[Thu Jan  2 04:02:25 2025] [::1]:64007 Accepted
+[Thu Jan  2 04:02:25 2025] [::1]:64007 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:02:25 2025] [::1]:64007 Closing
+[Thu Jan  2 04:03:07 2025] [::1]:64121 Accepted
+[Thu Jan  2 04:03:07 2025] [::1]:64121 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:07 2025] [::1]:64121 Closing
+[Thu Jan  2 04:03:08 2025] [::1]:64123 Accepted
+[Thu Jan  2 04:03:08 2025] [::1]:64123 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:08 2025] [::1]:64123 Closing
+[Thu Jan  2 04:03:09 2025] [::1]:64127 Accepted
+[Thu Jan  2 04:03:09 2025] [::1]:64127 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:09 2025] [::1]:64127 Closing
+[Thu Jan  2 04:03:09 2025] [::1]:64128 Accepted
+[Thu Jan  2 04:03:09 2025] [::1]:64128 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:09 2025] [::1]:64128 Closing
+[Thu Jan  2 04:03:09 2025] [::1]:64129 Accepted
+[Thu Jan  2 04:03:09 2025] [::1]:64129 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:09 2025] [::1]:64129 Closing
+[Thu Jan  2 04:03:09 2025] [::1]:64130 Accepted
+[Thu Jan  2 04:03:09 2025] [::1]:64130 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:09 2025] [::1]:64130 Closing
+[Thu Jan  2 04:03:09 2025] [::1]:64132 Accepted
+[Thu Jan  2 04:03:09 2025] [::1]:64132 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:09 2025] [::1]:64132 Closing
+[Thu Jan  2 04:03:10 2025] [::1]:64134 Accepted
+[Thu Jan  2 04:03:10 2025] [::1]:64134 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:10 2025] [::1]:64134 Closing
+[Thu Jan  2 04:03:10 2025] [::1]:64135 Accepted
+[Thu Jan  2 04:03:10 2025] [::1]:64135 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:10 2025] [::1]:64135 Closing
+[Thu Jan  2 04:03:10 2025] [::1]:64136 Accepted
+[Thu Jan  2 04:03:10 2025] [::1]:64136 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:10 2025] [::1]:64136 Closing
+[Thu Jan  2 04:03:10 2025] [::1]:64137 Accepted
+[Thu Jan  2 04:03:10 2025] [::1]:64137 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:10 2025] [::1]:64137 Closing
+[Thu Jan  2 04:03:10 2025] [::1]:64139 Accepted
+[Thu Jan  2 04:03:10 2025] [::1]:64139 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:10 2025] [::1]:64139 Closing
+[Thu Jan  2 04:03:11 2025] [::1]:64141 Accepted
+[Thu Jan  2 04:03:11 2025] [::1]:64141 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:11 2025] [::1]:64141 Closing
+[Thu Jan  2 04:03:11 2025] [::1]:64142 Accepted
+[Thu Jan  2 04:03:11 2025] [::1]:64142 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:11 2025] [::1]:64142 Closing
+[Thu Jan  2 04:03:11 2025] [::1]:64143 Accepted
+[Thu Jan  2 04:03:11 2025] [::1]:64143 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:11 2025] [::1]:64143 Closing
+[Thu Jan  2 04:03:11 2025] [::1]:64144 Accepted
+[Thu Jan  2 04:03:11 2025] [::1]:64144 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:11 2025] [::1]:64144 Closing
+[Thu Jan  2 04:03:11 2025] [::1]:64145 Accepted
+[Thu Jan  2 04:03:11 2025] [::1]:64145 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:11 2025] [::1]:64145 Closing
+[Thu Jan  2 04:03:11 2025] [::1]:64149 Accepted
+[Thu Jan  2 04:03:12 2025] [::1]:64149 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:12 2025] [::1]:64149 Closing
+[Thu Jan  2 04:03:12 2025] [::1]:64150 Accepted
+[Thu Jan  2 04:03:12 2025] [::1]:64150 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:12 2025] [::1]:64150 Closing
+[Thu Jan  2 04:03:12 2025] [::1]:64151 Accepted
+[Thu Jan  2 04:03:12 2025] [::1]:64151 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:12 2025] [::1]:64151 Closing
+[Thu Jan  2 04:03:12 2025] [::1]:64152 Accepted
+[Thu Jan  2 04:03:12 2025] [::1]:64152 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:12 2025] [::1]:64152 Closing
+[Thu Jan  2 04:03:12 2025] [::1]:64153 Accepted
+[Thu Jan  2 04:03:12 2025] [::1]:64153 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:12 2025] [::1]:64153 Closing
+[Thu Jan  2 04:03:12 2025] [::1]:64155 Accepted
+[Thu Jan  2 04:03:12 2025] [::1]:64155 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:12 2025] [::1]:64155 Closing
+[Thu Jan  2 04:03:13 2025] [::1]:64157 Accepted
+[Thu Jan  2 04:03:13 2025] [::1]:64157 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:13 2025] [::1]:64157 Closing
+[Thu Jan  2 04:03:13 2025] [::1]:64158 Accepted
+[Thu Jan  2 04:03:13 2025] [::1]:64158 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:13 2025] [::1]:64158 Closing
+[Thu Jan  2 04:03:13 2025] [::1]:64159 Accepted
+[Thu Jan  2 04:03:13 2025] [::1]:64159 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:13 2025] [::1]:64159 Closing
+[Thu Jan  2 04:03:13 2025] [::1]:64160 Accepted
+[Thu Jan  2 04:03:13 2025] [::1]:64160 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:13 2025] [::1]:64160 Closing
+[Thu Jan  2 04:03:13 2025] [::1]:64162 Accepted
+[Thu Jan  2 04:03:13 2025] [::1]:64162 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:13 2025] [::1]:64162 Closing
+[Thu Jan  2 04:03:14 2025] [::1]:64165 Accepted
+[Thu Jan  2 04:03:14 2025] [::1]:64165 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:14 2025] [::1]:64165 Closing
+[Thu Jan  2 04:03:14 2025] [::1]:64166 Accepted
+[Thu Jan  2 04:03:14 2025] [::1]:64166 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:14 2025] [::1]:64166 Closing
+[Thu Jan  2 04:03:14 2025] [::1]:64167 Accepted
+[Thu Jan  2 04:03:14 2025] [::1]:64167 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:14 2025] [::1]:64167 Closing
+[Thu Jan  2 04:03:14 2025] [::1]:64168 Accepted
+[Thu Jan  2 04:03:14 2025] [::1]:64168 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:14 2025] [::1]:64168 Closing
+[Thu Jan  2 04:03:14 2025] [::1]:64169 Accepted
+[Thu Jan  2 04:03:14 2025] [::1]:64169 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:14 2025] [::1]:64169 Closing
+[Thu Jan  2 04:03:14 2025] [::1]:64171 Accepted
+[Thu Jan  2 04:03:15 2025] [::1]:64171 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:15 2025] [::1]:64171 Closing
+[Thu Jan  2 04:03:15 2025] [::1]:64173 Accepted
+[Thu Jan  2 04:03:15 2025] [::1]:64173 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:15 2025] [::1]:64173 Closing
+[Thu Jan  2 04:03:15 2025] [::1]:64174 Accepted
+[Thu Jan  2 04:03:15 2025] [::1]:64174 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:15 2025] [::1]:64174 Closing
+[Thu Jan  2 04:03:15 2025] [::1]:64175 Accepted
+[Thu Jan  2 04:03:15 2025] [::1]:64175 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:15 2025] [::1]:64175 Closing
+[Thu Jan  2 04:03:15 2025] [::1]:64176 Accepted
+[Thu Jan  2 04:03:15 2025] [::1]:64176 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:15 2025] [::1]:64176 Closing
+[Thu Jan  2 04:03:15 2025] [::1]:64178 Accepted
+[Thu Jan  2 04:03:15 2025] [::1]:64178 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:15 2025] [::1]:64178 Closing
+[Thu Jan  2 04:03:16 2025] [::1]:64181 Accepted
+[Thu Jan  2 04:03:16 2025] [::1]:64181 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:16 2025] [::1]:64181 Closing
+[Thu Jan  2 04:03:16 2025] [::1]:64182 Accepted
+[Thu Jan  2 04:03:16 2025] [::1]:64182 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:16 2025] [::1]:64182 Closing
+[Thu Jan  2 04:03:16 2025] [::1]:64183 Accepted
+[Thu Jan  2 04:03:16 2025] [::1]:64183 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:16 2025] [::1]:64183 Closing
+[Thu Jan  2 04:03:16 2025] [::1]:64184 Accepted
+[Thu Jan  2 04:03:16 2025] [::1]:64184 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:16 2025] [::1]:64184 Closing
+[Thu Jan  2 04:03:16 2025] [::1]:64185 Accepted
+[Thu Jan  2 04:03:16 2025] [::1]:64185 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:16 2025] [::1]:64185 Closing
+[Thu Jan  2 04:03:16 2025] [::1]:64187 Accepted
+[Thu Jan  2 04:03:17 2025] [::1]:64187 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:17 2025] [::1]:64187 Closing
+[Thu Jan  2 04:03:17 2025] [::1]:64189 Accepted
+[Thu Jan  2 04:03:17 2025] [::1]:64189 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:17 2025] [::1]:64189 Closing
+[Thu Jan  2 04:03:17 2025] [::1]:64190 Accepted
+[Thu Jan  2 04:03:17 2025] [::1]:64190 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:17 2025] [::1]:64190 Closing
+[Thu Jan  2 04:03:17 2025] [::1]:64191 Accepted
+[Thu Jan  2 04:03:17 2025] [::1]:64191 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:17 2025] [::1]:64191 Closing
+[Thu Jan  2 04:03:17 2025] [::1]:64192 Accepted
+[Thu Jan  2 04:03:17 2025] [::1]:64192 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:17 2025] [::1]:64192 Closing
+[Thu Jan  2 04:03:18 2025] [::1]:64195 Accepted
+[Thu Jan  2 04:03:18 2025] [::1]:64195 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:18 2025] [::1]:64195 Closing
+[Thu Jan  2 04:03:18 2025] [::1]:64197 Accepted
+[Thu Jan  2 04:03:18 2025] [::1]:64197 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:18 2025] [::1]:64197 Closing
+[Thu Jan  2 04:03:18 2025] [::1]:64198 Accepted
+[Thu Jan  2 04:03:18 2025] [::1]:64198 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:18 2025] [::1]:64198 Closing
+[Thu Jan  2 04:03:18 2025] [::1]:64199 Accepted
+[Thu Jan  2 04:03:18 2025] [::1]:64199 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:18 2025] [::1]:64199 Closing
+[Thu Jan  2 04:03:18 2025] [::1]:64200 Accepted
+[Thu Jan  2 04:03:18 2025] [::1]:64200 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:18 2025] [::1]:64200 Closing
+[Thu Jan  2 04:03:18 2025] [::1]:64202 Accepted
+[Thu Jan  2 04:03:18 2025] [::1]:64202 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:18 2025] [::1]:64202 Closing
+[Thu Jan  2 04:03:19 2025] [::1]:64204 Accepted
+[Thu Jan  2 04:03:19 2025] [::1]:64204 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:19 2025] [::1]:64204 Closing
+[Thu Jan  2 04:03:19 2025] [::1]:64206 Accepted
+[Thu Jan  2 04:03:19 2025] [::1]:64206 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:19 2025] [::1]:64206 Closing
+[Thu Jan  2 04:03:20 2025] [::1]:64208 Accepted
+[Thu Jan  2 04:03:20 2025] [::1]:64208 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:03:20 2025] [::1]:64208 Closing
+[Thu Jan  2 04:03:29 2025] [::1]:64239 Accepted
+[Thu Jan  2 04:03:29 2025] [::1]:64239 [200]: GET /login
+[Thu Jan  2 04:03:29 2025] [::1]:64239 Closing
+[Thu Jan  2 04:03:37 2025] [::1]:64263 Accepted
+[Thu Jan  2 04:03:37 2025] [::1]:64263 [200]: GET /login
+[Thu Jan  2 04:03:37 2025] [::1]:64263 Closing
+[Thu Jan  2 04:03:37 2025] [::1]:64266 Accepted
+[Thu Jan  2 04:03:37 2025] [::1]:64266 [200]: GET /login
+[Thu Jan  2 04:03:37 2025] [::1]:64266 Closing
+[Thu Jan  2 04:04:16 2025] [::1]:64371 Accepted
+[Thu Jan  2 04:04:41 2025] [::1]:64371 [200]: POST /forgot-password
+[Thu Jan  2 04:04:41 2025] [::1]:64371 Closing
+[Thu Jan  2 04:06:17 2025] [::1]:63800 Closed without sending a request; it was probably just an unused speculative preconnection
+[Thu Jan  2 04:06:17 2025] [::1]:63800 Closing
+[Thu Jan  2 04:06:17 2025] [::1]:65407 Accepted
+[Thu Jan  2 04:06:17 2025] [::1]:65408 Accepted
+[Thu Jan  2 04:06:17 2025] [::1]:65407 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:06:17 2025] [::1]:65407 Closing
+[Thu Jan  2 04:06:27 2025] [::1]:65408 [200]: GET /reset-password?token=3607f992b623fa1019281a84484ffe370676880d9b151fc912d17385b754b77b
+[Thu Jan  2 04:06:27 2025] [::1]:65408 Closing
+[Thu Jan  2 04:06:27 2025] [::1]:65438 Accepted
+[Thu Jan  2 04:06:45 2025] [::1]:65438 [200]: POST /reset-password
+[Thu Jan  2 04:06:45 2025] [::1]:65438 Closing
+[Thu Jan  2 04:06:47 2025] [::1]:65490 Accepted
+[Thu Jan  2 04:06:47 2025] [::1]:65490 [200]: GET /login
+[Thu Jan  2 04:06:47 2025] [::1]:65490 Closing
+[Thu Jan  2 04:06:47 2025] [::1]:65491 Accepted
+[Thu Jan  2 04:06:56 2025] [::1]:65491 [200]: POST /login
+[Thu Jan  2 04:06:56 2025] [::1]:65491 Closing
+[Thu Jan  2 04:06:56 2025] [::1]:65519 Accepted
+[Thu Jan  2 04:06:56 2025] [::1]:65519 [302]: GET /chat
+[Thu Jan  2 04:06:56 2025] [::1]:65519 Closing
+[Thu Jan  2 04:06:56 2025] [::1]:65520 Accepted
+[Thu Jan  2 04:06:56 2025] [::1]:65520 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:06:56 2025] [::1]:65520 Closing
+[Thu Jan  2 04:07:20 2025] [::1]:49211 Accepted
+[Thu Jan  2 04:07:20 2025] [::1]:49211 [200]: POST /login
+[Thu Jan  2 04:07:20 2025] [::1]:49211 Closing
+[Thu Jan  2 04:07:20 2025] [::1]:49213 Accepted
+[Thu Jan  2 04:07:20 2025] [::1]:49216 Accepted
+[Thu Jan  2 04:07:20 2025] [::1]:49213 [302]: GET /chat
+[Thu Jan  2 04:07:20 2025] [::1]:49213 Closing
+[Thu Jan  2 04:07:20 2025] [::1]:49216 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:07:20 2025] [::1]:49216 Closing
+[Thu Jan  2 04:09:09 2025] [::1]:50146 Accepted
+[Thu Jan  2 04:09:09 2025] [::1]:50146 [200]: POST /login
+[Thu Jan  2 04:09:09 2025] [::1]:50146 Closing
+[Thu Jan  2 04:09:09 2025] [::1]:50147 Accepted
+[Thu Jan  2 04:09:09 2025] [::1]:50147 [302]: GET /chat
+[Thu Jan  2 04:09:09 2025] [::1]:50147 Closing
+[Thu Jan  2 04:09:09 2025] [::1]:50148 Accepted
+[Thu Jan  2 04:09:09 2025] [::1]:50148 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:09:09 2025] [::1]:50148 Closing
+[Thu Jan  2 04:09:15 2025] [::1]:50167 Accepted
+[Thu Jan  2 04:09:15 2025] [::1]:50167 [200]: POST /login
+[Thu Jan  2 04:09:15 2025] [::1]:50167 Closing
+[Thu Jan  2 04:09:15 2025] [::1]:50168 Accepted
+[Thu Jan  2 04:09:15 2025] [::1]:50168 [302]: GET /chat
+[Thu Jan  2 04:09:15 2025] [::1]:50168 Closing
+[Thu Jan  2 04:09:15 2025] [::1]:50169 Accepted
+[Thu Jan  2 04:09:15 2025] [::1]:50169 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 04:09:15 2025] [::1]:50169 Closing
+[Thu Jan  2 04:11:16 2025] [::1]:50498 Accepted
+[Thu Jan  2 04:11:16 2025] [::1]:50498 [200]: POST /login
+[Thu Jan  2 04:11:16 2025] [::1]:50498 Closing
+[Thu Jan  2 04:11:16 2025] [::1]:50499 Accepted
+[Thu Jan  2 04:11:16 2025] [::1]:50500 Accepted
+[Thu Jan  2 04:11:16 2025] [::1]:50499 [200]: GET /chat - Uncaught ArgumentCountError: Too few arguments to function App\Views\Components\FriendRequests::__construct(), 1 passed in E:\ai\chat\chat-app\app\Views\chat.php on line 40 and exactly 2 expected in E:\ai\chat\chat-app\app\Views\Components\FriendRequests.php:8
 Stack trace:
-#0 E:\ai\chat\chat-app\app\Models\UserModel.php(120): App\Services\EmailService->__construct()
-#1 E:\ai\chat\chat-app\public\index.php(206): App\Models\UserModel->generatePasswordResetToken('admin@mics.asia')
+#0 E:\ai\chat\chat-app\app\Views\chat.php(40): App\Views\Components\FriendRequests->__construct(Array)
+#1 E:\ai\chat\chat-app\public\index.php(168): include('E:\\ai\\chat\\chat...')
 #2 {main}
-  thrown in E:\ai\chat\chat-app\app\Services\EmailService.php on line 14
-[Thu Jan  2 03:03:36 2025] [::1]:51428 Closing
-[Thu Jan  2 03:03:37 2025] [::1]:51432 Accepted
-[Thu Jan  2 03:03:37 2025] [::1]:51432 [200]: POST /forgot-password - Uncaught Error: Class "Monolog\Logger" not found in E:\ai\chat\chat-app\app\Services\EmailService.php:14
-Stack trace:
-#0 E:\ai\chat\chat-app\app\Models\UserModel.php(120): App\Services\EmailService->__construct()
-#1 E:\ai\chat\chat-app\public\index.php(206): App\Models\UserModel->generatePasswordResetToken('admin@mics.asia')
-#2 {main}
-  thrown in E:\ai\chat\chat-app\app\Services\EmailService.php on line 14
-[Thu Jan  2 03:03:37 2025] [::1]:51432 Closing
-[Thu Jan  2 03:08:46 2025] [::1]:52524 Accepted
-[Thu Jan  2 03:08:46 2025] [::1]:52524 [200]: POST /forgot-password - Uncaught Error: Call to undefined function App\Models\base_url() in E:\ai\chat\chat-app\app\Models\UserModel.php:122
-Stack trace:
-#0 E:\ai\chat\chat-app\public\index.php(206): App\Models\UserModel->generatePasswordResetToken('admin@mics.asia')
-#1 {main}
-  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 122
-[Thu Jan  2 03:08:46 2025] [::1]:52524 Closing
-[Thu Jan  2 03:08:47 2025] [::1]:52526 Accepted
-[Thu Jan  2 03:08:47 2025] [::1]:52526 [200]: POST /forgot-password - Uncaught Error: Call to undefined function App\Models\base_url() in E:\ai\chat\chat-app\app\Models\UserModel.php:122
-Stack trace:
-#0 E:\ai\chat\chat-app\public\index.php(206): App\Models\UserModel->generatePasswordResetToken('admin@mics.asia')
-#1 {main}
-  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 122
-[Thu Jan  2 03:08:47 2025] [::1]:52526 Closing
-[Thu Jan  2 03:08:52 2025] [::1]:52545 Accepted
-[Thu Jan  2 03:08:52 2025] [::1]:52546 Accepted
-[Thu Jan  2 03:08:52 2025] [::1]:52545 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
-[Thu Jan  2 03:08:52 2025] [::1]:52545 Closing
-[Thu Jan  2 03:08:57 2025] [::1]:52546 [200]: POST /login
-[Thu Jan  2 03:08:57 2025] [::1]:52546 Closing
-[Thu Jan  2 03:08:57 2025] [::1]:52559 Accepted
-[Thu Jan  2 03:08:57 2025] [::1]:52559 [302]: GET /chat
-[Thu Jan  2 03:08:57 2025] [::1]:52559 Closing
-[Thu Jan  2 03:08:57 2025] [::1]:52560 Accepted
-[Thu Jan  2 03:08:57 2025] [::1]:52560 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
-[Thu Jan  2 03:08:57 2025] [::1]:52560 Closing
-[Thu Jan  2 03:08:59 2025] [::1]:52568 Accepted
-[Thu Jan  2 03:09:03 2025] [::1]:52568 [200]: POST /forgot-password - Uncaught Error: Call to undefined function App\Models\base_url() in E:\ai\chat\chat-app\app\Models\UserModel.php:122
-Stack trace:
-#0 E:\ai\chat\chat-app\public\index.php(206): App\Models\UserModel->generatePasswordResetToken('admin@mics.asia')
-#1 {main}
-  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 122
-[Thu Jan  2 03:09:03 2025] [::1]:52568 Closing
-[Thu Jan  2 03:10:24 2025] [::1]:52796 Accepted
-[Thu Jan  2 03:10:24 2025] [::1]:52797 Accepted
-[Thu Jan  2 03:10:25 2025] [::1]:52796 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
-[Thu Jan  2 03:10:25 2025] [::1]:52796 Closing
-[Thu Jan  2 03:10:33 2025] [::1]:52797 [400]: POST /forgot-password
-[Thu Jan  2 03:10:33 2025] [::1]:52797 Closing
-[Thu Jan  2 03:10:35 2025] [::1]:52833 Accepted
-[Thu Jan  2 03:10:38 2025] [::1]:52833 [400]: POST /forgot-password
-[Thu Jan  2 03:10:38 2025] [::1]:52833 Closing
-[Thu Jan  2 03:10:39 2025] [::1]:52849 Accepted
-[Thu Jan  2 03:10:42 2025] [::1]:52849 [400]: POST /forgot-password
-[Thu Jan  2 03:10:42 2025] [::1]:52849 Closing
-[Thu Jan  2 03:12:59 2025] [::1]:53567 Accepted
-[Thu Jan  2 03:13:02 2025] [::1]:53567 [400]: POST /forgot-password
-[Thu Jan  2 03:13:02 2025] [::1]:53567 Closing
-[Thu Jan  2 03:15:11 2025] [::1]:53926 Accepted
-[Thu Jan  2 03:15:13 2025] [::1]:53926 [400]: POST /forgot-password
-[Thu Jan  2 03:15:13 2025] [::1]:53926 Closing
-[Thu Jan  2 03:15:57 2025] [::1]:54043 Accepted
-[Thu Jan  2 03:20:57 2025] [::1]:54043 [200]: POST /forgot-password - Maximum execution time of 120 seconds exceeded in E:\ai\chat\chat-app\vendor\phpmailer\phpmailer\src\SMTP.php on line 1281
-[Thu Jan  2 03:20:57 2025] [::1]:54043 Closing
+  thrown in E:\ai\chat\chat-app\app\Views\Components\FriendRequests.php on line 8
+[Thu Jan  2 04:11:16 2025] [::1]:50499 Closing
+[Thu Jan  2 04:11:16 2025] [::1]:50500 [200]: GET /assets/css/layout.css
+[Thu Jan  2 04:11:16 2025] [::1]:50500 Closing
+[Thu Jan  2 04:11:16 2025] [::1]:50501 Accepted
+[Thu Jan  2 04:11:16 2025] [::1]:50502 Accepted
+[Thu Jan  2 04:11:16 2025] [::1]:50503 Accepted
+[Thu Jan  2 04:11:16 2025] [::1]:50504 Accepted
+[Thu Jan  2 04:11:16 2025] [::1]:50501 [200]: GET /assets/css/mobile.css
+[Thu Jan  2 04:11:16 2025] [::1]:50502 [200]: GET /assets/css/theme.css
+[Thu Jan  2 04:11:16 2025] [::1]:50503 [404]: GET /assets/css/chat.css - No such file or directory
+[Thu Jan  2 04:11:16 2025] [::1]:50504 [404]: GET /assets/images/default-profile.png - No such file or directory
+[Thu Jan  2 04:11:16 2025] [::1]:50503 Closing
+[Thu Jan  2 04:11:16 2025] [::1]:50504 Closing
+[Thu Jan  2 04:11:16 2025] [::1]:50501 Closing
+[Thu Jan  2 04:11:16 2025] [::1]:50502 Closing

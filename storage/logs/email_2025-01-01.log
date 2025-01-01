@@ -6,3 +6,210 @@
 [2025-01-01 22:45:13] ERROR: Email Send Error | {"to":"admin@mics.asia","subject":"Password Reset Request for Chat App","message":"SMTP Error: Could not authenticate.","trace":"#0 E:\\ai\\chat\\chat-app\\vendor\\phpmailer\\phpmailer\\src\\PHPMailer.php(2058): PHPMailer\\PHPMailer\\PHPMailer->smtpConnect(Array)\n#1 E:\\ai\\chat\\chat-app\\vendor\\phpmailer\\phpmailer\\src\\PHPMailer.php(1687): PHPMailer\\PHPMailer\\PHPMailer->smtpSend('Date: Wed, 1 Ja...', '\\r\\n        <html...')\n#2 E:\\ai\\chat\\chat-app\\vendor\\phpmailer\\phpmailer\\src\\PHPMailer.php(1521): PHPMailer\\PHPMailer\\PHPMailer->postSend()\n#3 E:\\ai\\chat\\chat-app\\app\\Services\\EmailService.php(92): PHPMailer\\PHPMailer\\PHPMailer->send()\n#4 E:\\ai\\chat\\chat-app\\app\\Services\\EmailService.php(114): App\\Services\\EmailService->sendEmail('admin@mics.asia', 'Password Reset ...', '\\n        <html>...')\n#5 E:\\ai\\chat\\chat-app\\app\\Models\\UserModel.php(138): App\\Services\\EmailService->sendPasswordResetEmail('admin@mics.asia', 'http:\/\/127.0.0....')\n#6 E:\\ai\\chat\\chat-app\\public\\index.php(206): App\\Models\\UserModel->generatePasswordResetToken('admin@mics.asia')\n#7 {main}"}
 [2025-01-01 22:45:57] DEBUG: SMTP Configuration | {"host":"smtp.hostinger.com","port":465,"username":"REDACTED","from_email":"ashok@mics.asia"}
 [2025-01-01 22:45:57] DEBUG: Sending Email | {"to":"admin@mics.asia","subject":"Password Reset Request for Chat App","is_html":true}
+[2025-01-01 22:53:18] DEBUG: SMTP Configuration | {"host":"smtp.hostinger.com","port":465,"username":"REDACTED","from_email":"ashok@mics.asia"}
+[2025-01-01 22:53:18] DEBUG: Sending Email | {"to":"admin@mics.asia","subject":"Password Reset Request for Chat App","is_html":true}
+[2025-01-01 23:02:07] DEBUG: Attempting SMTP Configuration | {"host":"smtp.hostinger.com","port":"465","username":"REDACTED","from_email":"ashok@mics.asia"}
+[2025-01-01 23:02:07] DEBUG: SMTP Configuration | {"country":"IN","host":"smtp.hostinger.com","timestamp":"Thu, 02 Jan 2025 03:32:07"}
+[2025-01-01 23:02:07] DEBUG: Attempting Password Reset Email | {"to":"admin@mics.asia","reset_link":"http:\/\/127.0.0.1:8000\/reset-password?token=050ecdf01c64a4bec8c2b4627895e008dc9930770f3311abb111fde9f49a1486"}
+[2025-01-01 23:06:20] DEBUG: Attempting SMTP Configuration | {"host":"smtp.hostinger.com","port":"587","username":"REDACTED"}
+[2025-01-01 23:06:20] DEBUG: SMTP Configuration Completed | {"host":"smtp.hostinger.com","port":587,"secure_type":"tls"}
+[2025-01-01 23:06:20] DEBUG: Attempting Password Reset Email | {"to":"admin@mics.asia","reset_link":"http:\/\/127.0.0.1:8000\/reset-password?token=a6f607a4fb8aab1b0d6c141c7ec64c5d1656968bbd774b82940fd2e25b4bba3e"}
+[2025-01-01 23:06:36] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 220 ESMTP smtp.hostinger.com\r\n"}
+[2025-01-01 23:06:36] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: EHLO localhost\r\n"}
+[2025-01-01 23:06:36] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250-smtp.hostinger.com\r\n250-PIPELINING\r\n250-SIZE 48811212\r\n250-ETRN\r\n250-STARTTLS\r\n250-AUTH PLAIN LOGIN\r\n250-ENHANCEDSTATUSCODES\r\n250-8BITMIME\r\n250-DSN\r\n250 CHUNKING\r\n"}
+[2025-01-01 23:06:36] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: STARTTLS\r\n"}
+[2025-01-01 23:06:37] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 220 2.0.0 Ready to start TLS\r\n"}
+[2025-01-01 23:06:37] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: EHLO localhost\r\n"}
+[2025-01-01 23:06:37] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250-smtp.hostinger.com\r\n250-PIPELINING\r\n250-SIZE 48811212\r\n250-ETRN\r\n250-AUTH PLAIN LOGIN\r\n250-ENHANCEDSTATUSCODES\r\n250-8BITMIME\r\n250-DSN\r\n250 CHUNKING\r\n"}
+[2025-01-01 23:06:37] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: AUTH LOGIN\r\n"}
+[2025-01-01 23:06:37] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 334 VXNlcm5hbWU6\r\n"}
+[2025-01-01 23:06:37] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: [credentials hidden]"}
+[2025-01-01 23:06:37] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 334 UGFzc3dvcmQ6\r\n"}
+[2025-01-01 23:06:37] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: [credentials hidden]"}
+[2025-01-01 23:06:37] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 235 2.7.0 Authentication successful\r\n"}
+[2025-01-01 23:06:37] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: MAIL FROM:<ashok@mics.asia>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250 2.1.0 Ok\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: RCPT TO:<admin@mics.asia>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250 2.1.5 Ok\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: DATA\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 354 End data with <CR><LF>.<CR><LF>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: Date: Wed, 1 Jan 2025 23:06:20 +0100\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: To: admin@mics.asia\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: From: ChatApp <ashok@mics.asia>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: Subject: Password Reset Request\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: Message-ID: <Wl6c10y8Ycq5WY5hHRSEZ44a4aXEDXErrtDp3KXLw@localhost>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https:\/\/github.com\/PHPMailer\/PHPMailer)\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: MIME-Version: 1.0\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: Content-Type: text\/html; charset=iso-8859-1\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: \r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <!DOCTYPE html>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <html lang=\"en\">\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <head>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:     <meta charset=\"UTF-8\">\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:     <title>Password Reset Request<\/title>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <\/head>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <body>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:     <div style=\"font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;\">\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <h2>Password Reset Request<\/h2>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <p>You have requested to reset your password. Click the link below to reset:<\/p>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <p><a href=\"http:\/\/127.0.0.1:8000\/reset-password?token=a6f607a4fb8aab1b0d6c141c7ec64c5d1656968bbd774b82940fd2e25b4bba3e\" style=\"background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;\">Reset Password<\/a><\/p>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <p>If you did not request this, please ignore this email or contact support if you have concerns.<\/p>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <small>This link will expire in 1 hour.<\/small>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:     <\/div>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <\/body>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <\/html>\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: \r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: .\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250 2.0.0 Ok: queued as 4YNkSs6bBCzGFLQc\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: QUIT\r\n"}
+[2025-01-01 23:06:38] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 221 2.0.0 Bye\r\n"}
+[2025-01-01 23:06:38] INFO: Password Reset Email Sent | {"to":"admin@mics.asia","result":true}
+[2025-01-01 23:07:58] DEBUG: Attempting SMTP Configuration | {"host":"smtp.hostinger.com","port":"465","username":"REDACTED"}
+[2025-01-01 23:07:58] DEBUG: SMTP Configuration Completed | {"host":"smtp.hostinger.com","port":465,"secure_type":"ssl"}
+[2025-01-01 23:07:58] DEBUG: Attempting Password Reset Email | {"to":"admin@mics.asia","reset_link":"http:\/\/127.0.0.1:8000\/reset-password?token=2cd7b53eb2ccfcefde2573b7744e1a15e2bd735c3900ac8c408c683ef3dd9373"}
+[2025-01-01 23:08:17] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 220 ESMTP smtp.hostinger.com\r\n"}
+[2025-01-01 23:08:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: EHLO localhost\r\n"}
+[2025-01-01 23:08:17] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250-smtp.hostinger.com\r\n250-PIPELINING\r\n250-SIZE 48811212\r\n250-ETRN\r\n250-AUTH PLAIN LOGIN\r\n250-ENHANCEDSTATUSCODES\r\n250-8BITMIME\r\n250-DSN\r\n250 CHUNKING\r\n"}
+[2025-01-01 23:08:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: AUTH LOGIN\r\n"}
+[2025-01-01 23:08:17] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 334 VXNlcm5hbWU6\r\n"}
+[2025-01-01 23:08:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: [credentials hidden]"}
+[2025-01-01 23:08:17] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 334 UGFzc3dvcmQ6\r\n"}
+[2025-01-01 23:08:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: [credentials hidden]"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 235 2.7.0 Authentication successful\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: MAIL FROM:<ashok@mics.asia>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250 2.1.0 Ok\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: RCPT TO:<admin@mics.asia>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250 2.1.5 Ok\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: DATA\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 354 End data with <CR><LF>.<CR><LF>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: Date: Wed, 1 Jan 2025 23:07:58 +0100\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: To: admin@mics.asia\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: From: ChatApp <ashok@mics.asia>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: Subject: Password Reset Request\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: Message-ID: <9u8tRYQQ3fSK2wOSbKXTpps3mXlQe5EvZqusFOQsI@localhost>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https:\/\/github.com\/PHPMailer\/PHPMailer)\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: MIME-Version: 1.0\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: Content-Type: text\/html; charset=iso-8859-1\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: \r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <!DOCTYPE html>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <html lang=\"en\">\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <head>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:     <meta charset=\"UTF-8\">\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:     <title>Password Reset Request<\/title>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <\/head>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <body>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:     <div style=\"font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;\">\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <h2>Password Reset Request<\/h2>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <p>You have requested to reset your password. Click the link below to reset:<\/p>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <p><a href=\"http:\/\/127.0.0.1:8000\/reset-password?token=2cd7b53eb2ccfcefde2573b7744e1a15e2bd735c3900ac8c408c683ef3dd9373\" style=\"background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;\">Reset Password<\/a><\/p>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <p>If you did not request this, please ignore this email or contact support if you have concerns.<\/p>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <small>This link will expire in 1 hour.<\/small>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:     <\/div>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <\/body>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <\/html>\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: \r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: .\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250 2.0.0 Ok: queued as 4YNkVp15NpzGFLQc\r\n"}
+[2025-01-01 23:08:18] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: QUIT\r\n"}
+[2025-01-01 23:08:19] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 221 2.0.0 Bye\r\n"}
+[2025-01-01 23:08:19] INFO: Password Reset Email Sent | {"to":"admin@mics.asia","result":true}
+[2025-01-01 23:16:52] DEBUG: SMTP Configuration Completed | {"host":"smtp.hostinger.com","port":465,"secure_type":"ssl"}
+[2025-01-01 23:16:52] DEBUG: Attempting Password Reset Email | {"to":"admin@mics.asia","reset_link":"http:\/\/localhost:8000\/reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104"}
+[2025-01-01 23:17:16] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 220 ESMTP smtp.hostinger.com\r\n"}
+[2025-01-01 23:17:16] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: EHLO localhost\r\n"}
+[2025-01-01 23:17:16] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250-smtp.hostinger.com\r\n250-PIPELINING\r\n250-SIZE 48811212\r\n250-ETRN\r\n250-AUTH PLAIN LOGIN\r\n250-ENHANCEDSTATUSCODES\r\n250-8BITMIME\r\n250-DSN\r\n250 CHUNKING\r\n"}
+[2025-01-01 23:17:16] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: AUTH LOGIN\r\n"}
+[2025-01-01 23:17:16] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 334 VXNlcm5hbWU6\r\n"}
+[2025-01-01 23:17:16] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: [credentials hidden]"}
+[2025-01-01 23:17:16] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 334 UGFzc3dvcmQ6\r\n"}
+[2025-01-01 23:17:16] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: [credentials hidden]"}
+[2025-01-01 23:17:16] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 235 2.7.0 Authentication successful\r\n"}
+[2025-01-01 23:17:16] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: MAIL FROM:<ashok@mics.asia>\r\n"}
+[2025-01-01 23:17:16] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250 2.1.0 Ok\r\n"}
+[2025-01-01 23:17:16] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: RCPT TO:<admin@mics.asia>\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250 2.1.5 Ok\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: DATA\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 354 End data with <CR><LF>.<CR><LF>\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: Date: Wed, 1 Jan 2025 23:16:52 +0100\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: To: admin@mics.asia\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: From: ChatApp <ashok@mics.asia>\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: Subject: Password Reset Request for Chat App\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: Message-ID: <GRFYODy2vnOeRbPlmut4P2SLqutktUWozcWZJgYBjC8@localhost>\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https:\/\/github.com\/PHPMailer\/PHPMailer)\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: MIME-Version: 1.0\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: Content-Type: text\/html; charset=iso-8859-1\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: \r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <!DOCTYPE html>\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <html lang=\"en\">\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <head>\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:     <meta charset=\"UTF-8\">\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:     <title>Password Reset Request<\/title>\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <\/head>\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <body>\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:     <div style=\"font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;\">\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <h2>Password Reset Request<\/h2>\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <p>You have requested to reset your password. Click the link below to reset:<\/p>\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <p><a href=\"http:\/\/localhost:8000\/reset-password?token=14ba96e6237d294def5e7c0a378e70ceb15ab36c420a59845d06e9a943b2c104\" style=\"background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;\">Reset Password<\/a><\/p>\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <p>If you did not request this, please ignore this email or contact support if you have concerns.<\/p>\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <small>This link will expire in 1 hour.<\/small>\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:     <\/div>\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <\/body>\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <\/html>\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: \r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: .\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250 2.0.0 Ok: queued as 4YNkj852q3zFwgQX\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: RSET\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250 2.0.0 Ok\r\n"}
+[2025-01-01 23:17:17] INFO: Password Reset Email Sent | {"to":"admin@mics.asia","result":true}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: QUIT\r\n"}
+[2025-01-01 23:17:17] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 221 2.0.0 Bye\r\n"}
+[2025-01-01 23:34:16] DEBUG: SMTP Configuration Completed | {"host":"smtp.hostinger.com","port":465,"secure_type":"ssl"}
+[2025-01-01 23:34:16] DEBUG: Attempting Password Reset Email | {"to":"admin@mics.asia","reset_link":"http:\/\/localhost:8000\/reset-password?token=3607f992b623fa1019281a84484ffe370676880d9b151fc912d17385b754b77b"}
+[2025-01-01 23:34:39] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 220 ESMTP smtp.hostinger.com\r\n"}
+[2025-01-01 23:34:39] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: EHLO localhost\r\n"}
+[2025-01-01 23:34:40] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250-smtp.hostinger.com\r\n250-PIPELINING\r\n250-SIZE 48811212\r\n250-ETRN\r\n250-AUTH PLAIN LOGIN\r\n250-ENHANCEDSTATUSCODES\r\n250-8BITMIME\r\n250-DSN\r\n250 CHUNKING\r\n"}
+[2025-01-01 23:34:40] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: AUTH LOGIN\r\n"}
+[2025-01-01 23:34:40] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 334 VXNlcm5hbWU6\r\n"}
+[2025-01-01 23:34:40] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: [credentials hidden]"}
+[2025-01-01 23:34:40] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 334 UGFzc3dvcmQ6\r\n"}
+[2025-01-01 23:34:40] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: [credentials hidden]"}
+[2025-01-01 23:34:40] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 235 2.7.0 Authentication successful\r\n"}
+[2025-01-01 23:34:40] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: MAIL FROM:<ashok@mics.asia>\r\n"}
+[2025-01-01 23:34:40] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250 2.1.0 Ok\r\n"}
+[2025-01-01 23:34:40] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: RCPT TO:<admin@mics.asia>\r\n"}
+[2025-01-01 23:34:40] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250 2.1.5 Ok\r\n"}
+[2025-01-01 23:34:40] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: DATA\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 354 End data with <CR><LF>.<CR><LF>\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: Date: Wed, 1 Jan 2025 23:34:16 +0100\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: To: admin@mics.asia\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: From: ChatApp <ashok@mics.asia>\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: Subject: Password Reset Request for Chat App\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: Message-ID: <mfyzE20j55MDxBJ3MJrNGwg1nu5dPeAqQv53oqYiQ@localhost>\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https:\/\/github.com\/PHPMailer\/PHPMailer)\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: MIME-Version: 1.0\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: Content-Type: text\/html; charset=iso-8859-1\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: \r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <!DOCTYPE html>\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <html lang=\"en\">\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <head>\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:     <meta charset=\"UTF-8\">\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:     <title>Password Reset Request<\/title>\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <\/head>\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <body>\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:     <div style=\"font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;\">\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <h2>Password Reset Request<\/h2>\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <p>You have requested to reset your password. Click the link below to reset:<\/p>\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <p><a href=\"http:\/\/localhost:8000\/reset-password?token=3607f992b623fa1019281a84484ffe370676880d9b151fc912d17385b754b77b\" style=\"background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;\">Reset Password<\/a><\/p>\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <p>If you did not request this, please ignore this email or contact support if you have concerns.<\/p>\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:         <small>This link will expire in 1 hour.<\/small>\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER:     <\/div>\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <\/body>\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: <\/html>\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: \r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: .\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250 2.0.0 Ok: queued as 4YNl5D4WmQzFwgk8\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: RSET\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 250 2.0.0 Ok\r\n"}
+[2025-01-01 23:34:41] INFO: Password Reset Email Sent | {"to":"admin@mics.asia","result":true}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":1,"message":"CLIENT -> SERVER: QUIT\r\n"}
+[2025-01-01 23:34:41] DEBUG: SMTP Debug | {"level":2,"message":"SERVER -> CLIENT: 221 2.0.0 Bye\r\n"}

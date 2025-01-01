@@ -74,13 +74,23 @@ class UserModel {
             throw new Exception("Invalid email or password");
         }
 
-        // Update user status
-        $updateQuery = "UPDATE users SET status = 'online' WHERE id = :id";
+        // Update user status and last login
+        $updateQuery = "
+            UPDATE users 
+            SET 
+                status = 'online', 
+                last_login = :last_login 
+            WHERE id = :id
+        ";
         $updateStmt = $this->db->prepare($updateQuery);
-        $updateStmt->execute([':id' => $user['id']]);
+        $updateStmt->execute([
+            ':last_login' => date('Y-m-d H:i:s'),
+            ':id' => $user['id']
+        ]);
 
         // Remove sensitive information
         unset($user['password']);
+        $user['token'] = $this->generateToken($user);
         return $user;
     }
 
@@ -129,7 +139,7 @@ class UserModel {
             ':user_id' => $user['id']
         ]);
 
-        // Construct reset link
+        // Construct reset link using base_url function
         $resetLink = base_url("reset-password?token={$resetToken}");
 
         // Send reset email
@@ -294,16 +304,37 @@ class UserModel {
 
     // Get user's groups
     private function getUserGroups($userId) {
-        $query = "
-            SELECT g.id, g.name, g.description, ug.role
-            FROM groups g
-            JOIN user_groups ug ON g.id = ug.group_id
-            WHERE ug.user_id = :user_id
-        ";
+        try {
+            // First, check if the description column exists
+            $checkQuery = "PRAGMA table_info(groups)";
+            $checkStmt = $this->db->prepare($checkQuery);
+            $checkStmt->execute();
+            $columns = $checkStmt->fetchAll(PDO::FETCH_ASSOC);
+            
+            // Determine if description column exists
+            $hasDescriptionColumn = false;
+            foreach ($columns as $column) {
+                if ($column['name'] === 'description') {
+                    $hasDescriptionColumn = true;
+                    break;
+                }
+            }
 
-        $stmt = $this->db->prepare($query);
-        $stmt->execute([':user_id' => $userId]);
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+            // Construct query based on column existence
+            $query = $hasDescriptionColumn 
+                ? "SELECT g.id, g.name, g.description, ug.role FROM groups g JOIN user_groups ug ON g.id = ug.group_id WHERE ug.user_id = :user_id"
+                : "SELECT g.id, g.name, ug.role FROM groups g JOIN user_groups ug ON g.id = ug.group_id WHERE ug.user_id = :user_id";
+
+            $stmt = $this->db->prepare($query);
+            $stmt->execute([':user_id' => $userId]);
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        } catch (\Exception $e) {
+            // Log the error for debugging
+            error_log("Error fetching user groups: " . $e->getMessage());
+            
+            // Return an empty array if there's an error
+            return [];
+        }
     }
 
     // Get user's friends
@@ -431,19 +462,19 @@ class UserModel {
         return true;
     }
 
-    // Generate JWT token for authentication
     public function generateToken($user) {
-        $issuedAt = time();
-        $expirationTime = $issuedAt + 3600; // Valid for 1 hour
-
+        // Ensure secret key is set
+        $secretKey = $_ENV['APP_KEY'] ?? 'default_secret_key';
+        
+        // Token payload
         $payload = [
-            'iat' => $issuedAt,
-            'exp' => $expirationTime,
+            'iat' => time(),
+            'exp' => time() + 3600, // Token expires in 1 hour
             'user_id' => $user['id'],
-            'username' => $user['username'],
             'email' => $user['email']
         ];
-
-        return JWT::encode($payload, $_ENV['APP_KEY'], 'HS256');
+        
+        // Generate JWT
+        return JWT::encode($payload, $secretKey, 'HS256');
     }
 }
