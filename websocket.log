@@ -1,0 +1,13 @@
+WebSocket server running on port 8080
+PHP Deprecated:  Creation of dynamic property React\Socket\Connection::$decor is deprecated in E:\ai\chat\chat-app\vendor\cboden\ratchet\src\Ratchet\Server\IoServer.php on line 83
+
+Deprecated: Creation of dynamic property React\Socket\Connection::$decor is deprecated in E:\ai\chat\chat-app\vendor\cboden\ratchet\src\Ratchet\Server\IoServer.php on line 83
+PHP Deprecated:  Creation of dynamic property Ratchet\Server\IoConnection::$resourceId is deprecated in E:\ai\chat\chat-app\vendor\cboden\ratchet\src\Ratchet\Server\IoServer.php on line 84
+
+Deprecated: Creation of dynamic property Ratchet\Server\IoConnection::$resourceId is deprecated in E:\ai\chat\chat-app\vendor\cboden\ratchet\src\Ratchet\Server\IoServer.php on line 84
+PHP Deprecated:  Creation of dynamic property Ratchet\Server\IoConnection::$remoteAddress is deprecated in E:\ai\chat\chat-app\vendor\cboden\ratchet\src\Ratchet\Server\IoServer.php on line 87
+
+Deprecated: Creation of dynamic property Ratchet\Server\IoConnection::$remoteAddress is deprecated in E:\ai\chat\chat-app\vendor\cboden\ratchet\src\Ratchet\Server\IoServer.php on line 87
+PHP Deprecated:  Creation of dynamic property Ratchet\Server\IoConnection::$httpHeadersReceived is deprecated in E:\ai\chat\chat-app\vendor\cboden\ratchet\src\Ratchet\Http\HttpServer.php on line 33
+
+Deprecated: Creation of dynamic property Ratchet\Server\IoConnection::$httpHeadersReceived is deprecated in E:\ai\chat\chat-app\vendor\cboden\ratchet\src\Ratchet\Http\HttpServer.php on line 33

@@ -1,0 +1,143 @@
+[Thu Jan  2 02:55:12 2025] PHP 8.2.0 Development Server (http://localhost:8000) started
+[Thu Jan  2 02:55:15 2025] [::1]:49216 Accepted
+[Thu Jan  2 02:55:15 2025] [::1]:49217 Accepted
+[Thu Jan  2 02:55:15 2025] [::1]:49216 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 02:55:15 2025] [::1]:49216 Closing
+[Thu Jan  2 02:55:28 2025] [::1]:49249 Accepted
+[Thu Jan  2 02:55:28 2025] [::1]:49217 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 02:55:28 2025] [::1]:49217 Closing
+[Thu Jan  2 02:55:29 2025] [::1]:49249 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 02:55:29 2025] [::1]:49249 Closing
+[Thu Jan  2 02:55:29 2025] [::1]:49253 Accepted
+[Thu Jan  2 02:55:30 2025] [::1]:49254 Accepted
+[Thu Jan  2 02:55:30 2025] [::1]:49253 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 02:55:30 2025] [::1]:49253 Closing
+[Thu Jan  2 02:55:46 2025] [::1]:49254 [200]: GET /
+[Thu Jan  2 02:55:46 2025] [::1]:49254 Closing
+[Thu Jan  2 02:55:46 2025] [::1]:49301 Accepted
+[Thu Jan  2 02:56:08 2025] [::1]:49301 [200]: POST /login
+[Thu Jan  2 02:56:08 2025] [::1]:49301 Closing
+[Thu Jan  2 02:56:08 2025] [::1]:49357 Accepted
+[Thu Jan  2 02:56:08 2025] [::1]:49357 [302]: GET /chat
+[Thu Jan  2 02:56:08 2025] [::1]:49357 Closing
+[Thu Jan  2 02:56:08 2025] [::1]:49358 Accepted
+[Thu Jan  2 02:56:08 2025] [::1]:49358 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 02:56:08 2025] [::1]:49358 Closing
+[Thu Jan  2 02:56:26 2025] [::1]:49403 Accepted
+[Thu Jan  2 02:56:26 2025] [::1]:49403 [200]: POST /login
+[Thu Jan  2 02:56:26 2025] [::1]:49403 Closing
+[Thu Jan  2 02:56:26 2025] [::1]:49406 Accepted
+[Thu Jan  2 02:56:26 2025] [::1]:49407 Accepted
+[Thu Jan  2 02:56:26 2025] [::1]:49406 [302]: GET /chat
+[Thu Jan  2 02:56:26 2025] [::1]:49406 Closing
+[Thu Jan  2 02:56:26 2025] [::1]:49407 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 02:56:26 2025] [::1]:49407 Closing
+[Thu Jan  2 02:57:41 2025] [::1]:49949 Accepted
+[Thu Jan  2 02:57:41 2025] [::1]:49950 Accepted
+[Thu Jan  2 02:57:41 2025] [::1]:49949 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 02:57:41 2025] [::1]:49949 Closing
+[Thu Jan  2 02:58:06 2025] [::1]:49950 [400]: POST /register
+[Thu Jan  2 02:58:06 2025] [::1]:49950 Closing
+[Thu Jan  2 02:58:20 2025] [::1]:50099 Accepted
+[Thu Jan  2 02:58:20 2025] [::1]:50099 [200]: POST /login
+[Thu Jan  2 02:58:20 2025] [::1]:50099 Closing
+[Thu Jan  2 02:58:20 2025] [::1]:50100 Accepted
+[Thu Jan  2 02:58:20 2025] [::1]:50100 [302]: GET /chat
+[Thu Jan  2 02:58:20 2025] [::1]:50100 Closing
+[Thu Jan  2 02:58:20 2025] [::1]:50101 Accepted
+[Thu Jan  2 02:58:20 2025] [::1]:50101 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 02:58:20 2025] [::1]:50101 Closing
+[Thu Jan  2 02:58:39 2025] [::1]:50140 Accepted
+[Thu Jan  2 02:58:39 2025] [::1]:50140 [200]: POST /login
+[Thu Jan  2 02:58:39 2025] [::1]:50140 Closing
+[Thu Jan  2 02:58:39 2025] [::1]:50141 Accepted
+[Thu Jan  2 02:58:39 2025] [::1]:50141 [302]: GET /chat
+[Thu Jan  2 02:58:39 2025] [::1]:50141 Closing
+[Thu Jan  2 02:58:39 2025] [::1]:50142 Accepted
+[Thu Jan  2 02:58:39 2025] [::1]:50142 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 02:58:39 2025] [::1]:50142 Closing
+[Thu Jan  2 02:58:41 2025] [::1]:50147 Accepted
+[Thu Jan  2 02:58:45 2025] [::1]:50147 [200]: POST /forgot-password
+[Thu Jan  2 02:58:45 2025] [::1]:50147 Closing
+[Thu Jan  2 02:58:52 2025] [::1]:50173 Accepted
+[Thu Jan  2 02:58:52 2025] [::1]:50173 [200]: POST /forgot-password
+[Thu Jan  2 02:58:52 2025] [::1]:50173 Closing
+[Thu Jan  2 03:01:20 2025] [::1]:50734 Accepted
+[Thu Jan  2 03:01:20 2025] [::1]:50735 Accepted
+[Thu Jan  2 03:01:20 2025] [::1]:50734 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:01:20 2025] [::1]:50734 Closing
+[Thu Jan  2 03:01:53 2025] [::1]:50735 [400]: POST /forgot-password
+[Thu Jan  2 03:01:53 2025] [::1]:50735 Closing
+[Thu Jan  2 03:02:09 2025] [::1]:50867 Accepted
+[Thu Jan  2 03:02:12 2025] [::1]:50867 [400]: POST /forgot-password
+[Thu Jan  2 03:02:12 2025] [::1]:50867 Closing
+[Thu Jan  2 03:03:36 2025] [::1]:51428 Accepted
+[Thu Jan  2 03:03:36 2025] [::1]:51428 [200]: POST /forgot-password - Uncaught Error: Class "Monolog\Logger" not found in E:\ai\chat\chat-app\app\Services\EmailService.php:14
+Stack trace:
+#0 E:\ai\chat\chat-app\app\Models\UserModel.php(120): App\Services\EmailService->__construct()
+#1 E:\ai\chat\chat-app\public\index.php(206): App\Models\UserModel->generatePasswordResetToken('admin@mics.asia')
+#2 {main}
+  thrown in E:\ai\chat\chat-app\app\Services\EmailService.php on line 14
+[Thu Jan  2 03:03:36 2025] [::1]:51428 Closing
+[Thu Jan  2 03:03:37 2025] [::1]:51432 Accepted
+[Thu Jan  2 03:03:37 2025] [::1]:51432 [200]: POST /forgot-password - Uncaught Error: Class "Monolog\Logger" not found in E:\ai\chat\chat-app\app\Services\EmailService.php:14
+Stack trace:
+#0 E:\ai\chat\chat-app\app\Models\UserModel.php(120): App\Services\EmailService->__construct()
+#1 E:\ai\chat\chat-app\public\index.php(206): App\Models\UserModel->generatePasswordResetToken('admin@mics.asia')
+#2 {main}
+  thrown in E:\ai\chat\chat-app\app\Services\EmailService.php on line 14
+[Thu Jan  2 03:03:37 2025] [::1]:51432 Closing
+[Thu Jan  2 03:08:46 2025] [::1]:52524 Accepted
+[Thu Jan  2 03:08:46 2025] [::1]:52524 [200]: POST /forgot-password - Uncaught Error: Call to undefined function App\Models\base_url() in E:\ai\chat\chat-app\app\Models\UserModel.php:122
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(206): App\Models\UserModel->generatePasswordResetToken('admin@mics.asia')
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 122
+[Thu Jan  2 03:08:46 2025] [::1]:52524 Closing
+[Thu Jan  2 03:08:47 2025] [::1]:52526 Accepted
+[Thu Jan  2 03:08:47 2025] [::1]:52526 [200]: POST /forgot-password - Uncaught Error: Call to undefined function App\Models\base_url() in E:\ai\chat\chat-app\app\Models\UserModel.php:122
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(206): App\Models\UserModel->generatePasswordResetToken('admin@mics.asia')
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 122
+[Thu Jan  2 03:08:47 2025] [::1]:52526 Closing
+[Thu Jan  2 03:08:52 2025] [::1]:52545 Accepted
+[Thu Jan  2 03:08:52 2025] [::1]:52546 Accepted
+[Thu Jan  2 03:08:52 2025] [::1]:52545 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:08:52 2025] [::1]:52545 Closing
+[Thu Jan  2 03:08:57 2025] [::1]:52546 [200]: POST /login
+[Thu Jan  2 03:08:57 2025] [::1]:52546 Closing
+[Thu Jan  2 03:08:57 2025] [::1]:52559 Accepted
+[Thu Jan  2 03:08:57 2025] [::1]:52559 [302]: GET /chat
+[Thu Jan  2 03:08:57 2025] [::1]:52559 Closing
+[Thu Jan  2 03:08:57 2025] [::1]:52560 Accepted
+[Thu Jan  2 03:08:57 2025] [::1]:52560 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:08:57 2025] [::1]:52560 Closing
+[Thu Jan  2 03:08:59 2025] [::1]:52568 Accepted
+[Thu Jan  2 03:09:03 2025] [::1]:52568 [200]: POST /forgot-password - Uncaught Error: Call to undefined function App\Models\base_url() in E:\ai\chat\chat-app\app\Models\UserModel.php:122
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(206): App\Models\UserModel->generatePasswordResetToken('admin@mics.asia')
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 122
+[Thu Jan  2 03:09:03 2025] [::1]:52568 Closing
+[Thu Jan  2 03:10:24 2025] [::1]:52796 Accepted
+[Thu Jan  2 03:10:24 2025] [::1]:52797 Accepted
+[Thu Jan  2 03:10:25 2025] [::1]:52796 [200]: GET /login?error=Invalid+authentication.+Please+log+in.
+[Thu Jan  2 03:10:25 2025] [::1]:52796 Closing
+[Thu Jan  2 03:10:33 2025] [::1]:52797 [400]: POST /forgot-password
+[Thu Jan  2 03:10:33 2025] [::1]:52797 Closing
+[Thu Jan  2 03:10:35 2025] [::1]:52833 Accepted
+[Thu Jan  2 03:10:38 2025] [::1]:52833 [400]: POST /forgot-password
+[Thu Jan  2 03:10:38 2025] [::1]:52833 Closing
+[Thu Jan  2 03:10:39 2025] [::1]:52849 Accepted
+[Thu Jan  2 03:10:42 2025] [::1]:52849 [400]: POST /forgot-password
+[Thu Jan  2 03:10:42 2025] [::1]:52849 Closing
+[Thu Jan  2 03:12:59 2025] [::1]:53567 Accepted
+[Thu Jan  2 03:13:02 2025] [::1]:53567 [400]: POST /forgot-password
+[Thu Jan  2 03:13:02 2025] [::1]:53567 Closing
+[Thu Jan  2 03:15:11 2025] [::1]:53926 Accepted
+[Thu Jan  2 03:15:13 2025] [::1]:53926 [400]: POST /forgot-password
+[Thu Jan  2 03:15:13 2025] [::1]:53926 Closing
+[Thu Jan  2 03:15:57 2025] [::1]:54043 Accepted
+[Thu Jan  2 03:20:57 2025] [::1]:54043 [200]: POST /forgot-password - Maximum execution time of 120 seconds exceeded in E:\ai\chat\chat-app\vendor\phpmailer\phpmailer\src\SMTP.php on line 1281
+[Thu Jan  2 03:20:57 2025] [::1]:54043 Closing

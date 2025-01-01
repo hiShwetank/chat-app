@@ -1,0 +1,59 @@
+{
+    "application_name": "WebSocket Chat App",
+    "version": "1.0.0",
+    "deployment_settings": {
+        "php_version_required": "^8.0",
+        "extensions_required": [
+            "pdo",
+            "sqlite3",
+            "json",
+            "openssl"
+        ],
+        "recommended_hosting_config": {
+            "memory_limit": "256M",
+            "max_execution_time": 300,
+            "upload_max_filesize": "50M",
+            "post_max_size": "50M"
+        }
+    },
+    "deployment_steps": [
+        {
+            "type": "composer_install",
+            "command": "composer install --no-dev --optimize-autoloader"
+        },
+        {
+            "type": "database_init",
+            "script": "database/init_db.php"
+        },
+        {
+            "type": "permissions",
+            "paths": [
+                "storage/logs",
+                "storage/database",
+                "public/assets/uploads"
+            ],
+            "mode": "755"
+        },
+        {
+            "type": "htaccess_config",
+            "rules": [
+                "RewriteEngine On",
+                "RewriteCond %{REQUEST_FILENAME} !-f",
+                "RewriteCond %{REQUEST_FILENAME} !-d",
+                "RewriteRule ^(.*)$ index.php [L]"
+            ]
+        }
+    ],
+    "environment_variables": {
+        "APP_ENV": "production",
+        "DB_CONNECTION": "sqlite",
+        "WEBSOCKET_HOST": "localhost",
+        "WEBSOCKET_PORT": 8080
+    },
+    "backup_exclusions": [
+        ".git",
+        "vendor",
+        "storage/*.sqlite",
+        "*.log"
+    ]
+}

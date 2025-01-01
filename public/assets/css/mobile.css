@@ -1,0 +1,135 @@
+/* Mobile-First Responsive Design */
+@media (max-width: 768px) {
+    .chat-app-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        max-height: 40vh;
+        order: 2;
+    }
+
+    .main-content {
+        flex-grow: 1;
+        order: 1;
+    }
+
+    /* Compact User Profile */
+    .user-profile {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: var(--space-sm);
+    }
+
+    .user-profile .avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .user-profile .user-info {
+        flex-grow: 1;
+        margin-left: var(--space-sm);
+    }
+
+    .user-profile .user-actions {
+        display: flex;
+        gap: var(--space-xs);
+    }
+
+    /* Friends List Mobile */
+    .friends-header {
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    .friend-item {
+        padding: var(--space-xs);
+    }
+
+    .friend-item .friend-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Chat Window Mobile */
+    .chat-header {
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    .chat-partner-info img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .message-input-container {
+        flex-direction: column;
+        gap: var(--space-xs);
+    }
+
+    #message-input {
+        width: 100%;
+        margin: 0;
+    }
+
+    .input-actions {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+/* Ultra-Small Devices */
+@media (max-width: 480px) {
+    .sidebar {
+        max-height: 35vh;
+    }
+
+    .user-profile .user-actions {
+        flex-direction: column;
+    }
+
+    .friends-list .friend-item .friend-details {
+        display: none;
+    }
+}
+
+/* Dark Mode for Mobile */
+@media (prefers-color-scheme: dark) {
+    .chat-app-container {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+    .sidebar {
+        background-color: #1e1e1e;
+        border-right-color: #333;
+    }
+
+    .main-content {
+        background-color: #1a1a1a;
+    }
+
+    .user-profile {
+        background-color: #2c2c2c;
+    }
+
+    .friend-item:hover {
+        background-color: #2a2a2a;
+    }
+
+    .chat-header {
+        background-color: #1e1e1e;
+        border-bottom-color: #333;
+    }
+
+    .message-input-container {
+        background-color: #1e1e1e;
+        border-top-color: #333;
+    }
+
+    #message-input {
+        background-color: #2a2a2a;
+        color: #e0e0e0;
+        border-color: #444;
+    }
+}

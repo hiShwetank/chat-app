@@ -1,0 +1,123 @@
+# WebSocket and Application Error Log
+# This file will track errors during runtime
+[01-Jan-2025 21:54:55 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Models\UserModel::__construct(): Argument #1 ($db) must be of type PDO, string given, called in E:\ai\chat\chat-app\public\index.php on line 36 and defined in E:\ai\chat\chat-app\app\Models\UserModel.php:11
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(36): App\Models\UserModel->__construct('E:\\ai\\chat\\chat...')
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 11
+[01-Jan-2025 21:54:56 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Models\UserModel::__construct(): Argument #1 ($db) must be of type PDO, string given, called in E:\ai\chat\chat-app\public\index.php on line 36 and defined in E:\ai\chat\chat-app\app\Models\UserModel.php:11
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(36): App\Models\UserModel->__construct('E:\\ai\\chat\\chat...')
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 11
+[01-Jan-2025 21:54:57 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Models\UserModel::__construct(): Argument #1 ($db) must be of type PDO, string given, called in E:\ai\chat\chat-app\public\index.php on line 36 and defined in E:\ai\chat\chat-app\app\Models\UserModel.php:11
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(36): App\Models\UserModel->__construct('E:\\ai\\chat\\chat...')
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 11
+[01-Jan-2025 21:54:57 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Models\UserModel::__construct(): Argument #1 ($db) must be of type PDO, string given, called in E:\ai\chat\chat-app\public\index.php on line 36 and defined in E:\ai\chat\chat-app\app\Models\UserModel.php:11
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(36): App\Models\UserModel->__construct('E:\\ai\\chat\\chat...')
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 11
+[01-Jan-2025 21:54:57 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Models\UserModel::__construct(): Argument #1 ($db) must be of type PDO, string given, called in E:\ai\chat\chat-app\public\index.php on line 36 and defined in E:\ai\chat\chat-app\app\Models\UserModel.php:11
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(36): App\Models\UserModel->__construct('E:\\ai\\chat\\chat...')
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 11
+[01-Jan-2025 21:54:57 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Models\UserModel::__construct(): Argument #1 ($db) must be of type PDO, string given, called in E:\ai\chat\chat-app\public\index.php on line 36 and defined in E:\ai\chat\chat-app\app\Models\UserModel.php:11
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(36): App\Models\UserModel->__construct('E:\\ai\\chat\\chat...')
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 11
+[01-Jan-2025 21:56:13 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Models\UserModel::__construct(): Argument #1 ($db) must be of type PDO, string given, called in E:\ai\chat\chat-app\public\index.php on line 37 and defined in E:\ai\chat\chat-app\app\Models\UserModel.php:11
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(37): App\Models\UserModel->__construct('E:\\ai\\chat\\chat...')
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 11
+[01-Jan-2025 21:56:14 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Models\UserModel::__construct(): Argument #1 ($db) must be of type PDO, string given, called in E:\ai\chat\chat-app\public\index.php on line 37 and defined in E:\ai\chat\chat-app\app\Models\UserModel.php:11
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(37): App\Models\UserModel->__construct('E:\\ai\\chat\\chat...')
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 11
+[01-Jan-2025 21:56:15 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Models\UserModel::__construct(): Argument #1 ($db) must be of type PDO, string given, called in E:\ai\chat\chat-app\public\index.php on line 37 and defined in E:\ai\chat\chat-app\app\Models\UserModel.php:11
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(37): App\Models\UserModel->__construct('E:\\ai\\chat\\chat...')
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 11
+[01-Jan-2025 21:56:15 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Models\UserModel::__construct(): Argument #1 ($db) must be of type PDO, string given, called in E:\ai\chat\chat-app\public\index.php on line 37 and defined in E:\ai\chat\chat-app\app\Models\UserModel.php:11
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(37): App\Models\UserModel->__construct('E:\\ai\\chat\\chat...')
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 11
+[01-Jan-2025 21:56:24 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Models\UserModel::__construct(): Argument #1 ($db) must be of type PDO, string given, called in E:\ai\chat\chat-app\public\index.php on line 37 and defined in E:\ai\chat\chat-app\app\Models\UserModel.php:11
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(37): App\Models\UserModel->__construct('E:\\ai\\chat\\chat...')
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 11
+[01-Jan-2025 22:00:57 Europe/Berlin] PHP Warning:  Undefined array key "password" in E:\ai\chat\chat-app\app\Models\UserModel.php on line 49
+[01-Jan-2025 22:00:57 Europe/Berlin] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in E:\ai\chat\chat-app\app\Models\UserModel.php on line 49
+[01-Jan-2025 22:02:23 Europe/Berlin] PHP Warning:  Undefined array key "password" in E:\ai\chat\chat-app\app\Models\UserModel.php on line 49
+[01-Jan-2025 22:02:23 Europe/Berlin] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in E:\ai\chat\chat-app\app\Models\UserModel.php on line 49
+[01-Jan-2025 22:04:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Database\Migrations\001_create_users_table" not found in E:\ai\chat\chat-app\app\Services\DatabaseService.php:75
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(25): App\Services\DatabaseService::runMigrations()
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Services\DatabaseService.php on line 75
+[01-Jan-2025 22:06:20 Europe/Berlin] PHP Fatal error:  Cannot declare class Database\Migrations\CreateUsersTable, because the name is already in use in E:\ai\chat\chat-app\database\migrations\001_create_users_table.php on line 7
+[01-Jan-2025 22:07:14 Europe/Berlin] PHP Fatal error:  Cannot declare class Database\Migrations\CreateUsersTable, because the name is already in use in E:\ai\chat\chat-app\database\migrations\001_create_users_table.php on line 7
+[01-Jan-2025 22:08:30 Europe/Berlin] PHP Fatal error:  Cannot declare class Database\Migrations\CreateUsersTable001, because the name is already in use in E:\ai\chat\chat-app\database\migrations\001_create_users_table.php on line 7
+[01-Jan-2025 22:20:02 Europe/Berlin] PHP Warning:  Undefined variable $userDetails in E:\ai\chat\chat-app\app\Views\chat.php on line 20
+[01-Jan-2025 22:20:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\ai\chat\chat-app\app\Views\Components\UserProfile.php on line 15
+[01-Jan-2025 22:20:02 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in E:\ai\chat\chat-app\app\Views\Components\UserProfile.php on line 15
+[01-Jan-2025 22:20:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\ai\chat\chat-app\app\Views\Components\UserProfile.php on line 17
+[01-Jan-2025 22:20:02 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in E:\ai\chat\chat-app\app\Views\Components\UserProfile.php on line 17
+[01-Jan-2025 22:20:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\ai\chat\chat-app\app\Views\Components\UserProfile.php on line 20
+[01-Jan-2025 22:20:02 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in E:\ai\chat\chat-app\app\Views\Components\UserProfile.php on line 20
+[01-Jan-2025 22:20:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\ai\chat\chat-app\app\Views\Components\UserProfile.php on line 21
+[01-Jan-2025 22:20:02 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in E:\ai\chat\chat-app\app\Views\Components\UserProfile.php on line 21
+[01-Jan-2025 22:20:02 Europe/Berlin] PHP Warning:  Undefined variable $friends in E:\ai\chat\chat-app\app\Views\chat.php on line 23
+[01-Jan-2025 22:20:02 Europe/Berlin] PHP Warning:  Undefined variable $userDetails in E:\ai\chat\chat-app\app\Views\chat.php on line 23
+[01-Jan-2025 22:20:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\ai\chat\chat-app\app\Views\chat.php on line 23
+[01-Jan-2025 22:20:02 Europe/Berlin] PHP Warning:  Undefined variable $friendRequests in E:\ai\chat\chat-app\app\Views\chat.php on line 27
+[01-Jan-2025 22:20:02 Europe/Berlin] PHP Warning:  Undefined variable $userDetails in E:\ai\chat\chat-app\app\Views\chat.php on line 27
+[01-Jan-2025 22:20:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\ai\chat\chat-app\app\Views\chat.php on line 27
+[01-Jan-2025 22:20:02 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in E:\ai\chat\chat-app\app\Views\Components\FriendRequests.php:19
+Stack trace:
+#0 E:\ai\chat\chat-app\app\Views\Components\FriendRequests.php(19): count(NULL)
+#1 E:\ai\chat\chat-app\app\Views\chat.php(28): App\Views\Components\FriendRequests->render()
+#2 E:\ai\chat\chat-app\public\index.php(185): include('E:\\ai\\chat\\chat...')
+#3 {main}
+  thrown in E:\ai\chat\chat-app\app\Views\Components\FriendRequests.php on line 19
+[01-Jan-2025 22:32:12 Europe/Berlin] Password reset email error: SMTP Error: Could not authenticate.
+[01-Jan-2025 22:33:36 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Monolog\Logger" not found in E:\ai\chat\chat-app\app\Services\EmailService.php:14
+Stack trace:
+#0 E:\ai\chat\chat-app\app\Models\UserModel.php(120): App\Services\EmailService->__construct()
+#1 E:\ai\chat\chat-app\public\index.php(206): App\Models\UserModel->generatePasswordResetToken('admin@mics.asia')
+#2 {main}
+  thrown in E:\ai\chat\chat-app\app\Services\EmailService.php on line 14
+[01-Jan-2025 22:33:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Monolog\Logger" not found in E:\ai\chat\chat-app\app\Services\EmailService.php:14
+Stack trace:
+#0 E:\ai\chat\chat-app\app\Models\UserModel.php(120): App\Services\EmailService->__construct()
+#1 E:\ai\chat\chat-app\public\index.php(206): App\Models\UserModel->generatePasswordResetToken('admin@mics.asia')
+#2 {main}
+  thrown in E:\ai\chat\chat-app\app\Services\EmailService.php on line 14
+[01-Jan-2025 22:38:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function App\Models\base_url() in E:\ai\chat\chat-app\app\Models\UserModel.php:122
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(206): App\Models\UserModel->generatePasswordResetToken('admin@mics.asia')
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 122
+[01-Jan-2025 22:38:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function App\Models\base_url() in E:\ai\chat\chat-app\app\Models\UserModel.php:122
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(206): App\Models\UserModel->generatePasswordResetToken('admin@mics.asia')
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 122
+[01-Jan-2025 22:39:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function App\Models\base_url() in E:\ai\chat\chat-app\app\Models\UserModel.php:122
+Stack trace:
+#0 E:\ai\chat\chat-app\public\index.php(206): App\Models\UserModel->generatePasswordResetToken('admin@mics.asia')
+#1 {main}
+  thrown in E:\ai\chat\chat-app\app\Models\UserModel.php on line 122
+[01-Jan-2025 22:40:33 Europe/Berlin] Password reset email error: Failed to send email: SMTP Error: Could not authenticate.
+[01-Jan-2025 22:40:38 Europe/Berlin] Password reset email error: Failed to send email: SMTP Error: Could not authenticate.
+[01-Jan-2025 22:40:42 Europe/Berlin] Password reset email error: Failed to send email: SMTP Error: Could not authenticate.
+[01-Jan-2025 22:50:57 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in E:\ai\chat\chat-app\vendor\phpmailer\phpmailer\src\SMTP.php on line 1281

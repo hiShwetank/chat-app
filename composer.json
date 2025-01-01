@@ -1,0 +1,28 @@
+{
+    "name": "chat-app/websocket-chat",
+    "description": "Real-time WebSocket Chat Application",
+    "type": "project",
+    "require": {
+        "php": "^8.0",
+        "firebase/php-jwt": "^6.0",
+        "cboden/ratchet": "^0.4",
+        "vlucas/phpdotenv": "^5.3",
+        "phpmailer/phpmailer": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Src\\": "src/",
+            "Database\\Migrations\\": "database/migrations/"
+        },
+        "files": [
+            "app/Helpers/global_functions.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "your.email@example.com"
+        }
+    ]
+}
